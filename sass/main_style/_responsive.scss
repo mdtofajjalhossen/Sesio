@@ -1,0 +1,33 @@
+@media (min-width:992px) {
+.sesio_header {
+    .header_nav {
+        .Sesio_header_menu {
+            ul {
+                li.nav-item {
+                    padding-bottom: 40px;
+                    margin-bottom: -40px;
+                    .dropdown-menu {
+                        display: block;
+                        margin: 65px 0 0;
+                        left: 0;
+                        top: 0;
+                        min-width: max-content;
+                        transform: translate(-30px, 10px);
+                        box-shadow: $btn-shadow;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    &:hover {
+                        .dropdown-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translate(-30px, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+}

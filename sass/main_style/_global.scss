@@ -1,0 +1,111 @@
+/*========================= global ====================*/
+body {
+    font-family: $fontkarla;
+}
+p {
+    color: $theme-color;
+    font-size: $f-size;
+    line-height: $f-hight;
+    font-family: $fontkarla;
+    font-weight: $f-weight-r;
+    // font-family: 'Spectral', serif;
+}
+.primary_Btn {
+    display: inline-block;
+    color: $color-white;
+    font-size: $f-size;
+    line-height: $f-hight;
+    font-weight: $f-weight-bold;
+    text-transform: $text-cap;
+    background: $theme-bg;
+    border: 1px solid $theme-bg;
+    border-radius: 50px;
+    padding: 12px 44px;
+    @include transition(0.5s);
+    outline: none;
+    text-align: center;
+    box-shadow: $btn-shadow;
+
+    min-width: 160px;
+    &:hover {
+        text-decoration: none;
+        box-shadow: none;
+        background: transparent;
+        color: $theme-bg;
+        border-color: $theme-bg;
+        // @include transform(scale(1.4));
+    }
+}
+
+.Secondary_Btn {
+    display: inline-block;
+    color: $theme-bg;
+    font-size: $f-size;
+    line-height: $f-hight;
+    font-weight: $f-weight-bold;
+    text-transform: $text-cap;
+    border-color: $theme-bg;
+    border: 1px solid $theme-bg;
+    border-radius: 50px;
+    padding: 12px 44px;
+    box-shadow: none;
+    @include transition(0.5s);
+    outline: none;
+    text-align: center;
+    
+
+    min-width: 160px;
+    &:hover {
+        text-decoration: none;
+        box-shadow: $btn-shadow;
+        background: transparent;
+        color: $color-white;
+        background: $theme-bg;
+
+        // @include transform(scale(1.4));
+    }
+}
+/*================================== custom container ================================*/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/*
+color: $theme-bg;
+font-size: 16px;
+line-height: $f-hight;
+font-weight: $f-weight-bold;
+font-family: $fontkarla;
+text-transform: $text-cap;
+background: transparent;
+@include transition(0.5s);
+*/
+
+/*================================== Global title ================================*/
+.glbal_title {
+    font-family: $fontspectral;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: $f-weight-semi;
+    color: $theme-bg;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+.glbal_min_head {
+    font-family: $fontspectral;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: $f-weight-bold;
+    color: $theme-colortwo;
+    text-align: center;
+    max-width: 410px;
+    width: 100%;
+    margin: 0 auto 40px;
+}
+.title_min_clr {
+    color: $theme-bg;
+}

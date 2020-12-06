@@ -1,0 +1,47 @@
+/*========================= portfolio ====================*/
+.portfolio_menu {
+    display: block;
+    margin: 0 auto 60px;
+    text-align: center;
+    button {
+        border: 1px solid #ffd2ca;
+        font-family: $fontspectral;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: $f-weight-bold;
+        color: $theme-colortwo;
+        outline: none;
+        text-transform: capitalize;
+        display: inline-block;
+        padding: 12px 29px;
+        outline: none;
+        border-radius: 50px;
+        background: transparent;
+        margin-right: 25px;
+        transition: all 0.5s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            background: $theme-bg;
+            border-color: $theme-bg;
+            color: $color-white;
+        }
+    }
+}
+.portfolio_details {
+    margin-bottom: 30px;
+}
+
+.portfolio_details a {
+    margin-bottom: 30px;
+    display: block;
+}
+.portfolio_details a img {
+    max-width: 100%;
+    width: 100%;
+    // height: 400px;
+}
+.View_details {
+    margin-top: 30px;
+}

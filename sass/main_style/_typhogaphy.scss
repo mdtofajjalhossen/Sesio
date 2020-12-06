@@ -1,0 +1,50 @@
+/*========================= typographic ====================*/
+@charset "utf-8";
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+height: 100%;
+width: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+button {
+    outline: none;
+    border: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
+.mb15 {
+margin-bottom: 15px;
+}
+.mb20 {
+margin-bottom: 20px;
+}
+.mb25 {
+margin-bottom: 25px;
+}
+.mb30 {
+margin-bottom: 30px;
+}
+.mb55 {
+margin-bottom: 55px;
+}

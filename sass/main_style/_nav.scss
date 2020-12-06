@@ -1,0 +1,154 @@
+/*========================= nav ====================*/
+
+.sesio_header {
+    .container {
+        max-width: 1320px;
+        width: 100%;
+        .header_nav {
+            padding: 0;
+            outline: none;
+            .logo {
+                img {
+                    max-width: 130px;
+                    width: 100%;
+                    & + img {
+                        display: none;
+                    }
+                }
+            }
+            .humburger_btn {
+                padding: 0;
+                outline: none;
+                .bar_icon {
+                    width: 30px;
+                    height: 16px;
+                    position: relative;
+                    display: inline-block;
+                    .bar {
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        left: 0;
+                        background: red;
+                        @include transition (0.5s);
+                        &.bar_1 {
+                            top: 0;
+                        }
+                        &.bar_2 {
+                            top: 50%;
+                        }
+                        &.bar_3 {
+                            top: 100%;
+                        }
+                    }
+    
+                }
+                &[aria-expanded="true"] {
+                    .bar {
+                        &.bar_1 {
+                            top: 50%;
+                            transform: rotate(45deg);
+                        }
+                        &.bar_2 {
+                            opacity: 0;
+                        }
+                        &.bar_3 {
+                            top: 50%;
+                            transform: rotate(-45deg) translateY(-50%);
+                        }
+                    }
+                }
+            }
+            .Sesio_header_menu {
+                ul {
+                    li.nav-item {
+                        margin-left: 50px;
+                        a.nav-link {
+                            padding: 0;
+                            color: $theme-color;
+                            font-family: $fontkarla;
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-transform: $text-cap;
+                            @include transition(0.5s);
+                            position: relative;
+                            &::before {
+                               position: absolute;
+                               content: "";
+                               bottom: 0;
+                               right: 0;
+                               height: 1px;
+                               width: 0;
+                               opacity: 0;
+                               @include transition(0.5s);
+                               background: $theme-bg;
+                            }
+                            &:hover {
+                                &::before {
+                                    width: 100%;
+                                    opacity: 1;
+                                    left: 0;
+                                    right: auto;
+                                }
+                            }
+                            &.dropdown-toggle {
+                                &::after {
+                                    position: absolute;
+                                    content: "\33";
+                                    right: -20px;
+                                    top: 0;
+                                    font-family: "eleganticons";
+                                    border: 0;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &.active {
+                           a.nav-link {
+                               &::before {
+                                   width: 100%;
+                                   opacity: 1;
+                                   left: 0;
+                                   right: auto;
+                               }
+                           } 
+                        }
+                        .dropdown-menu {
+                            padding: 20px 30px;
+                            border-radius: 5px;
+                            @include transition(0.5s);
+                            // background-color: $color-white;
+                            background-color: #222;
+                            border: none;
+                            li {
+                                display: block;
+                                a {
+                                    color: $theme-bg;
+                                    font-size: 16px;
+                                    line-height: $f-hight;
+                                    font-weight: $f-weight-bold;
+                                    font-family: $fontkarla;
+                                    text-transform: $text-cap;
+                                    background: transparent;
+                                    @include transition(0.5s);
+                                    &:hover {
+                                        color: $theme-color;
+                                        text-decoration: none;
+                                        background: transparent;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .get_register {
+                margin-left: 40px;
+            }
+        }
+    }
+}
