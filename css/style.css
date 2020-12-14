@@ -438,18 +438,23 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*========================= service ====================*/
 .Our_services .single_service {
-  background-color: #112222;
-  padding: 10px 15px; }
+  padding: 15px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #d1cfce;
+  border-radius: 5px; }
   .Our_services .single_service .service_img {
     position: relative;
     display: block;
     overflow: hidden;
-    background: #fff;
+    background: #ff6b4f;
     margin-right: 8px;
     padding: 15px;
     width: 90px;
-    height: 75px;
-    line-height: 75px; }
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%; }
     .Our_services .single_service .service_img img {
       position: absolute;
       top: 50%;
@@ -468,16 +473,21 @@ h1, h2, h3, h4, h5, h6, p {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); }
-    .Our_services .single_service .service_img:hover img {
-      top: -100%;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0); }
-      .Our_services .single_service .service_img:hover img + img {
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
+  .Our_services .single_service:hover .service_img {
+    background-color: #ffffff; }
+  .Our_services .single_service:hover {
+    background: #ff6b4f;
+    border: 1px solid #ff6b4f; }
+  .Our_services .single_service:hover img {
+    top: -100%;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+    .Our_services .single_service:hover img + img {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
 
 /*========================= testimonial ====================*/
 /*========================= video ====================*/
