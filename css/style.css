@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*========================= service ====================*/
 .Our_services .single_service {
-  padding: 15px;
+  padding: 15px 10px 15px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -473,6 +473,15 @@ h1, h2, h3, h4, h5, h6, p {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); }
+  .Our_services .single_service .service_content .servicehead {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Spectral", serif;
+    color: #1b212f;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
   .Our_services .single_service:hover .service_img {
     background-color: #ffffff; }
   .Our_services .single_service:hover {
@@ -488,10 +497,15 @@ h1, h2, h3, h4, h5, h6, p {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
+  .Our_services .single_service:hover .service_content .servicehead {
+    color: #ffffff; }
 
 /*========================= testimonial ====================*/
 /*========================= video ====================*/
 /*========================= chooseus ====================*/
+.why_choseus_wrap {
+  background-color: #1b212f; }
+
 /*========================= Funnys ====================*/
 /*========================= play keyframes ====================*/
 @-webkit-keyframes videoplay {

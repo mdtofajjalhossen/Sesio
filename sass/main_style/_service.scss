@@ -2,7 +2,7 @@
 .Our_services {
     
     .single_service {
-        padding: 15px;
+        padding: 15px 10px 15px;
         @include transition (0.5s);
         border: 1px solid #d1cfce;
         border-radius: 5px;
@@ -40,6 +40,17 @@
             }
 
         }
+        .service_content {
+            .servicehead {
+                font-size: 30px;
+                font-weight: $f-weight-bold;
+                font-family: $fontspectral;
+                color: $theme-colortwo;
+                text-transform: $text-cap;
+                @include transition(0.5s)
+            }
+
+        }
         &:hover {
             .service_img {
                 background-color: $color-white;
@@ -62,6 +73,15 @@
                 }
             }
         }
+        &:hover {
+            .service_content {
+                .servicehead {
+                    color: $color-white;
+                }
+    
+            }
+        }
+
     }
 }
 
