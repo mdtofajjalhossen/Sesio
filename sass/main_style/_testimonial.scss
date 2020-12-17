@@ -1,1 +1,60 @@
 /*========================= testimonial ====================*/
+.happy_client_wrap {
+    background-color: #d8d2e8;
+    padding: 100px 0;
+    .client_prof {
+        position: relative;
+        display: inline-block;
+        padding: 15px;
+        border-radius: 50%;
+        a {
+            display: inline-block;
+            padding: 15px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .ddd {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid red;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            animation: move 10s linear infinite;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: red;
+                left: 0;
+                border-radius: 50%;
+                line-height: 0px;
+                top: 18px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: black;
+                right: 0;
+                border-radius: 50%;
+                line-height: 10px;
+                bottom: 18px;
+            }
+        }
+    }
+}
+@keyframes move {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+// @keyframes move2 {
+//     0% {
+//         transform: rotate(360deg);
+//     }
+// }

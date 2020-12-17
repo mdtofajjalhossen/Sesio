@@ -1,4 +1,88 @@
 /*========================= chooseus ====================*/
 .why_choseus_wrap{
     background-color:$theme-colortwo ;
+    padding: 100px 0 150px;
+    overflow: hidden;
+    position: relative;
+    .chose_noise_one {
+        position: absolute;
+    }
+        .choseus_left{
+            .glbal_title {
+                text-align: left;
+                margin-bottom: 13px;
+                font-family: $fontspectral;
+            }
+            .glbal_min_head{
+                text-align: left;
+                margin: 0 auto 10px 0;
+                max-width: 465px;
+                font-family: $fontspectral;
+                color: $color-white;
+            }
+            p {
+                max-width: 500px;
+                width: 100%;
+                margin-bottom: 15px;
+                font-family: $fontkarla;
+                color: $color-white;
+            }
+            .choseus_left_check {
+                ul {
+                    li{
+                        margin-bottom: 9px;
+                        display: inline-block;
+                        &:last-child {
+                            margin-bottom: 27px;
+                        }
+                        a {
+                            font-size: $f-size;
+                            line-height: $f-hight;
+                            text-decoration: none;
+                            font-family: $fontkarla;
+                            color: $color-white;
+                            i {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    .about_left_img {
+        position: relative;
+        img {
+            z-index: 2;
+            position: relative;
+        }
+        .video_play {
+            a.popup_video {
+                &::after {
+                }
+                img {
+
+                }
+            }
+        }
+        &::before {
+            background-color: #163d49;
+            opacity: 1;
+            position: absolute;
+            width: 449px;
+            height: 472px;
+            content: "";
+            bottom: -50px;
+            right: -50px;
+            z-index: 1;
+        }
+        .video_pattern {
+            img{
+                position: absolute;
+                right: -56px;
+                top: 80px;
+                z-index: 3;
+            }
+        }
+
+    }
 }
