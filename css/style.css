@@ -601,8 +601,10 @@ h1, h2, h3, h4, h5, h6, p {
   .why_choseus_wrap .about_left_img {
     position: relative; }
     .why_choseus_wrap .about_left_img img {
-      z-index: 2;
+      z-index: 5;
       position: relative; }
+    .why_choseus_wrap .about_left_img .video_play a.popup_video {
+      z-index: 6; }
     .why_choseus_wrap .about_left_img::before {
       background-color: #163d49;
       opacity: 1;
@@ -617,7 +619,7 @@ h1, h2, h3, h4, h5, h6, p {
       position: absolute;
       right: -56px;
       top: 80px;
-      z-index: 3; }
+      z-index: 7; }
 
 /*========================= Funnys ====================*/
 /*========================= play keyframes ====================*/

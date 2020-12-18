@@ -52,11 +52,12 @@
     .about_left_img {
         position: relative;
         img {
-            z-index: 2;
+            z-index: 5;
             position: relative;
         }
         .video_play {
             a.popup_video {
+                z-index: 6;
                 &::after {
                 }
                 img {
@@ -80,7 +81,7 @@
                 position: absolute;
                 right: -56px;
                 top: 80px;
-                z-index: 3;
+                z-index: 7;
             }
         }
 
