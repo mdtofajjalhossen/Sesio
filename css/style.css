@@ -513,42 +513,52 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
     display: inline-block;
     padding: 15px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-bottom: 30px; }
     .happy_client_wrap .client_prof a {
       display: inline-block;
-      padding: 15px;
-      background-color: red;
-      border-radius: 50%; }
-    .happy_client_wrap .client_prof .ddd {
+      background-color: #fddb64;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center; }
+    .happy_client_wrap .client_prof .client_border {
       position: absolute;
       width: 100%;
       height: 100%;
-      border: 2px solid red;
+      border: 1px solid #eeeef0;
       top: 0;
       left: 0;
       border-radius: 50%;
       -webkit-animation: move 10s linear infinite;
       animation: move 10s linear infinite; }
-      .happy_client_wrap .client_prof .ddd::before {
+      .happy_client_wrap .client_prof .client_border::before {
         position: absolute;
         content: "";
         width: 10px;
         height: 10px;
-        background: red;
+        background: #01aeb2;
         left: 0;
         border-radius: 50%;
         line-height: 0px;
-        top: 18px; }
-      .happy_client_wrap .client_prof .ddd::after {
+        top: 35px; }
+      .happy_client_wrap .client_prof .client_border::after {
         position: absolute;
         content: "";
         width: 10px;
         height: 10px;
-        background: black;
+        background: #ff6b4f;
         right: 0;
         border-radius: 50%;
         line-height: 10px;
-        bottom: 18px; }
+        bottom: 35px; }
+  .happy_client_wrap .happy_details {
+    font-family: "Spectral", serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #1b212f; }
 
 @-webkit-keyframes move {
   0% {
@@ -568,36 +578,64 @@ h1, h2, h3, h4, h5, h6, p {
   overflow: hidden;
   position: relative; }
   .why_choseus_wrap .chose_noise_one {
-    position: absolute; }
-  .why_choseus_wrap .choseus_left .glbal_title {
-    text-align: left;
-    margin-bottom: 13px;
-    font-family: "Spectral", serif; }
-  .why_choseus_wrap .choseus_left .glbal_min_head {
-    text-align: left;
-    margin: 0 auto 10px 0;
-    max-width: 465px;
-    font-family: "Spectral", serif;
-    color: #ffffff; }
-  .why_choseus_wrap .choseus_left p {
-    max-width: 500px;
-    width: 100%;
-    margin-bottom: 15px;
-    font-family: "Karla", sans-serif;
-    color: #ffffff; }
-  .why_choseus_wrap .choseus_left .choseus_left_check ul li {
-    margin-bottom: 9px;
-    display: inline-block; }
-    .why_choseus_wrap .choseus_left .choseus_left_check ul li:last-child {
-      margin-bottom: 27px; }
-    .why_choseus_wrap .choseus_left .choseus_left_check ul li a {
-      font-size: 18px;
-      line-height: 26px;
-      text-decoration: none;
+    position: absolute;
+    top: 165px;
+    left: 215px; }
+  .why_choseus_wrap .chose_noise_two {
+    position: absolute;
+    left: 115px;
+    bottom: 208px; }
+  .why_choseus_wrap .chose_noise_three {
+    position: absolute;
+    right: 340px;
+    top: 105px; }
+  .why_choseus_wrap .chose_noise_four {
+    position: absolute;
+    right: 168px;
+    top: 290px; }
+  .why_choseus_wrap .chose_noise_five {
+    position: absolute;
+    left: 655px;
+    top: 35px; }
+  .why_choseus_wrap .chose_noise_eight {
+    position: absolute;
+    right: 168px;
+    bottom: 200px; }
+  .why_choseus_wrap .choseus_left {
+    padding-top: 70px; }
+    .why_choseus_wrap .choseus_left .glbal_title {
+      text-align: left;
+      margin-bottom: 13px;
+      font-family: "Spectral", serif; }
+    .why_choseus_wrap .choseus_left .glbal_min_head {
+      text-align: left;
+      margin: 0 auto 10px 0;
+      max-width: 465px;
+      font-family: "Spectral", serif;
+      color: #ffffff; }
+    .why_choseus_wrap .choseus_left p {
+      max-width: 500px;
+      width: 100%;
+      margin-bottom: 15px;
       font-family: "Karla", sans-serif;
       color: #ffffff; }
-      .why_choseus_wrap .choseus_left .choseus_left_check ul li a i {
-        margin-right: 8px; }
+    .why_choseus_wrap .choseus_left .choseus_left_check ul li {
+      margin-bottom: 9px;
+      display: inline-block; }
+      .why_choseus_wrap .choseus_left .choseus_left_check ul li:last-child {
+        margin-bottom: 27px; }
+      .why_choseus_wrap .choseus_left .choseus_left_check ul li a {
+        font-size: 18px;
+        line-height: 26px;
+        text-decoration: none;
+        font-family: "Karla", sans-serif;
+        color: #ffffff; }
+        .why_choseus_wrap .choseus_left .choseus_left_check ul li a i {
+          margin-right: 8px; }
+    .why_choseus_wrap .choseus_left .chose_noise_six {
+      position: absolute;
+      bottom: 85px;
+      left: 390px; }
   .why_choseus_wrap .about_left_img {
     position: relative; }
     .why_choseus_wrap .about_left_img img {
@@ -620,6 +658,10 @@ h1, h2, h3, h4, h5, h6, p {
       right: -56px;
       top: 80px;
       z-index: 7; }
+    .why_choseus_wrap .about_left_img .chose_noise_seven {
+      position: absolute;
+      bottom: -85px;
+      right: 200px; }
 
 /*========================= Funnys ====================*/
 /*========================= play keyframes ====================*/

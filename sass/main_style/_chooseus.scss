@@ -6,8 +6,37 @@
     position: relative;
     .chose_noise_one {
         position: absolute;
+        top: 165px;
+        left: 215px;
+    }
+    .chose_noise_two{
+        position: absolute;
+        left: 115px;
+        bottom: 208px;
+    }
+    .chose_noise_three{
+        position: absolute;
+        right: 340px;
+        top: 105px;
+    }
+    .chose_noise_four{
+        position: absolute;
+        right: 168px;
+        top: 290px;
+    }
+    .chose_noise_five{
+        position: absolute;
+        left: 655px;
+        top: 35px;
+    }
+    .chose_noise_eight {
+        position: absolute;
+        right: 168px;
+        bottom:200px; 
     }
         .choseus_left{
+            // position: relative;
+            padding-top: 70px;
             .glbal_title {
                 text-align: left;
                 margin-bottom: 13px;
@@ -48,6 +77,11 @@
                     }
                 }
             }
+            .chose_noise_six {
+                position: absolute;
+                bottom: 85px;
+                left:390px;
+            }
         }
     .about_left_img {
         position: relative;
@@ -83,6 +117,11 @@
                 top: 80px;
                 z-index: 7;
             }
+        }
+        .chose_noise_seven {
+            position: absolute;
+            bottom: -85px;
+            right: 200px;
         }
 
     }
