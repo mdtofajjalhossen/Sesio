@@ -67,7 +67,7 @@
             speed: 2000,
             arrows: true,
             dots: false,
-            // autoplay: true,
+            autoplay: true,
             infinite: true,
             centerMode: true,
             centerPadding: '0px',
