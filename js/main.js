@@ -61,12 +61,12 @@
        appscreenshot slider
     -------------------------------------------------------------------------------*/
     function Appscreenshot() {
-        $('.app_Screenshot_slider').slick({
-            slidesToShow: 5,
+        $('.testimonial_slider').slick({
+            slidesToShow: 3,
             slidesToScroll: 1,
             speed: 2000,
-            arrows: false,
-            dots: true,
+            arrows: true,
+            dots: false,
             // autoplay: true,
             infinite: true,
             centerMode: true,

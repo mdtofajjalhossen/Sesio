@@ -54,9 +54,89 @@
     .happy_details {
         font-family: $fontspectral;
         font-size: 24px;
-        line-height: 36px;
+        line-height: 28px;
         font-weight: $f-weight-bold;
         color: $theme-colortwo;
+        text-transform: $text-cap;
+        margin-bottom: 24px;
+    }
+    .happy_count {
+        font-family: $fontspectral;
+        font-size: 48px;
+        line-height: 46px;
+        font-weight: $f-weight-bold;
+        color: $theme-colorfour;
+    }
+    // second row
+    .glbal_title {
+        text-align: left;
+        margin-bottom: 14px;
+    }
+    .glbal_min_head {
+        text-align: left;
+        max-width: 390px;
+        width: 100%;
+        margin: 0;
+    }
+    /* 3rd row*/ 
+    .testimonial_slider {
+        .testimonial_item{
+            border: 1px solid #ebebeb;
+            padding: 45px 30px ;
+            margin: 0 15px;
+            border-radius: 10px;
+            outline: none;
+            background-color: $color-white;
+            @include transition(0.5s);
+            .testimonial_pra{
+                font-family: $fontkarla;
+                font-size: $f-size;
+                line-height: $f-hight;
+                font-weight: $f-weight-r;
+                color: $theme-colorthree;
+                margin-bottom: 60px;
+            }
+            .testimonial_profile{
+                .testimonial_details{
+                    h4 {
+                        font-family: $fontspectral;
+                        font-size: 24px;
+                        line-height: 36px;
+                        font-weight: $f-weight-bold;
+                        color: $theme-colortwo;
+                        text-transform: $text-cap;
+                    }
+                    p {
+                        font-family: $fontspectral;
+                        font-size: 16px;
+                        line-height: 36px;
+                        font-weight: $f-weight-bold;
+                        color: $theme-colortwo;
+                        text-transform: $text-cap;
+                    }
+                }
+                .testimonial_review{
+                    ul{
+                        li {
+                            margin-right: 5px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            a {
+                                font-size: 16px;
+                                color: #f7bd01;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(1, 174, 178, 0.06);
+                border: 1px solid $color-white;
+            }
+        }
+
     }
 }
 @keyframes move {
@@ -64,8 +144,4 @@
         transform: rotate(-360deg);
     }
 }
-// @keyframes move2 {
-//     0% {
-//         transform: rotate(360deg);
-//     }
-// }
+
