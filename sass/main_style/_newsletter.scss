@@ -1,11 +1,28 @@
 /*========================= newsletter ====================*/
 .newsletter_wrap {
+    padding: 100px 0;
+    background:#fff url("../image/shape/newsletter.png") no-repeat center/cover;
+    margin-left: 200px;
+    z-index: -1;
     .newsletter_heading{
         .newsletter_title{
-
+            font-family: $fontspectral;
+            font-size: 48px;
+            line-height: 52px;
+            font-weight: $f-weight-bold;
+            color: $theme-colortwo;
+            margin-bottom: 20px;
         }
          p{
-
+            font-family: $fontkarla;
+            color: $theme-color;
+            font-size: $f-size;
+            line-height: $f-hight;
+            font-weight: $f-weight-r;
+            max-width: 585px;
+            width: 100%;
+            margin: 0 auto 50px;
+            text-align: center;
          }
     }
     .newsletter_content{
@@ -27,8 +44,7 @@
                    line-height: $f-hight;
                    font-family: $fontkarla;
                    font-weight: $f-weight-r;
-                //    border: 1px solid $color-white;
-                   border: 1px solid #000;
+                   border: 1px solid $color-white;
                    padding: 0 10px 0 40px;
                    height: 58px;
                    &:focus {
