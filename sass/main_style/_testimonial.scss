@@ -1,7 +1,17 @@
 /*========================= testimonial ====================*/
 .happy_client_wrap {
-    background-color: #d8d2e8;
+    background-color: $color-white;
     padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: linear-gradient(334deg,#f4f8fe 50%,#ffffff 50%)!important;
+        width: 100%;
+        height: 100%;
+
+    }
     .client_prof {
         position: relative;
         display: inline-block;
@@ -76,14 +86,60 @@
         text-align: left;
         max-width: 390px;
         width: 100%;
-        margin: 0;
+        margin: 0 0 54px 0;
     }
     /* 3rd row*/ 
     .testimonial_slider {
+        .slick-arrow {
+            background-color: $color-white;
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            z-index: 1;
+            @include transition(0.5s);      
+            box-shadow: none;
+            outline: none;
+            position: absolute;
+            top: -130px;
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(51, 51, 51, 0.1);
+            &::before {
+                font-family: "eleganticons";
+                @include transition(0.5s);
+                font-weight: $f-weight-semi;
+                color: $theme-colortwo;
+                line-height: initial;
+                transform: translateY(-50%);
+                top: 50%;
+            }
+            &:hover {
+                background-color: $theme-bg; 
+                box-shadow: none;
+                &::before {
+                    color: $color-white;
+                }
+            }
+        }
+        .slick-prev{
+            position: absolute;
+            left: auto;
+            right: 95px;
+            &::before {
+                content:"\23";
+            }
+        }
+        .slick-next{
+            position: absolute;
+            left: auto;
+            right: 15px;
+            &::before {
+                content: "\24";
+            }
+        }
+
         .testimonial_item{
             border: 1px solid #ebebeb;
             padding: 45px 30px ;
-            margin: 0 15px;
+            margin: 35px 15px 40px;
             border-radius: 10px;
             outline: none;
             background-color: $color-white;
@@ -132,7 +188,7 @@
                 }
             }
             &:hover {
-                box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(1, 174, 178, 0.06);
+                box-shadow: -4.77px 20.541px 40.4px 7.6px rgba(1, 174, 178, 0.06);
                 border: 1px solid $color-white;
             }
         }
@@ -144,6 +200,3 @@
         transform: rotate(-360deg);
     }
 }
-
-
-

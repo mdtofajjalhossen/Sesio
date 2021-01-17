@@ -1,4 +1,11 @@
 /*========================= service ====================*/
+// first row service heading
+.services_mt {
+    margin-top: 60px;
+    .glbal_min_head {
+        margin-bottom: 45px;
+    }
+}
 .Our_services {
     
     .single_service {
@@ -17,6 +24,7 @@
             height: 90px;
             line-height: 90px;
             border-radius: 50%;
+            @include transition(0.5s);
             img {
                 position: absolute;
                 top: 50%;
@@ -84,5 +92,4 @@
 
     }
 }
-
 

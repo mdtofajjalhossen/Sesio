@@ -1,7 +1,9 @@
 /*========================= banner ====================*/
 .banner_header {
     position: relative;
-    padding: 130px 0;
+    // padding: 130px 0;
+    padding-top: 265px;
+    padding-bottom: 130px;
     &::before {
         position: absolute;
         content: "";
