@@ -206,3 +206,31 @@
     }
 
 }
+
+/*========================= home three choose us ====================*/
+.home2_chose_us.home3_choss_us{
+    .about_right_slide{
+        .about_right_min_head{
+            position: relative;
+            display: inline-block;
+            color: $theme-bg;
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 7px;
+                width: 100%;
+                display: inline-block;
+                height: 1px;
+                background: $theme-bg;
+                content: "";
+                @include transition (0.5s);
+                
+            }
+            &:hover {
+                &::before {
+                    height: 5px;
+                }
+            }
+        }
+    }
+}

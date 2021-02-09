@@ -692,11 +692,36 @@ h1, h2, h3, h4, h5, h6, p {
   .about_homethre_wrap .about_two_left_img .Abt_three_bg {
     margin-left: 75px;
     border-bottom-right-radius: 120px; }
-  .about_homethre_wrap .about_two_left_img .noise_about .noise_about_one {
-    max-width: 100%;
-    height: auto; }
+  .about_homethre_wrap .about_two_left_img .noise_about {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: -60px; }
+    .about_homethre_wrap .about_two_left_img .noise_about .noise_about_one {
+      max-width: 100%;
+      height: auto; }
   .about_homethre_wrap .about_right_slide {
     margin-left: 90px; }
+    .about_homethre_wrap .about_right_slide .about_right_min_head {
+      position: relative;
+      display: inline-block; }
+      .about_homethre_wrap .about_right_slide .about_right_min_head::before {
+        position: absolute;
+        left: 0;
+        bottom: 7px;
+        width: 100%;
+        display: inline-block;
+        height: 1px;
+        background: #ff6b4f;
+        content: "";
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      .about_homethre_wrap .about_right_slide .about_right_min_head:hover::before {
+        height: 5px; }
+    .about_homethre_wrap .about_right_slide a.Secondary_Btn {
+      border-color: #f0c8c8;
+      padding: 11px 25px; }
 
 /*========================= service ====================*/
 .services_mt {
@@ -826,7 +851,7 @@ h1, h2, h3, h4, h5, h6, p {
       transition: all 0.5s;
       z-index: -1; }
     .service_homethree_wrap .glbal_title:hover::before {
-      height: 6px;
+      height: 5px;
       z-index: -1; }
   .service_homethree_wrap .service_item_wrap {
     background-color: #ffffff;
@@ -1182,6 +1207,26 @@ h1, h2, h3, h4, h5, h6, p {
     .home2_chose_us .about_right_slide .Secondary_Btn {
       border-color: #ffd2ca;
       padding: 11px 25px; }
+
+/*========================= home three choose us ====================*/
+.home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head {
+  position: relative;
+  display: inline-block;
+  color: #ff6b4f; }
+  .home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head::before {
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background: #ff6b4f;
+    content: "";
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head:hover::before {
+    height: 5px; }
 
 /*========================= Funnys ====================*/
 /*========================= play keyframes ====================*/
