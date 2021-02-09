@@ -1,6 +1,6 @@
-;
+
 (function ($) {
-    "use strict";
+  "use strict";
 
     function menu_fixed() {
         var menusfixed = $('.sesio_header');
@@ -44,13 +44,20 @@
             slidesToShow: 3,
                 slidesToScroll: 1,
                 speed: 2000,
-                arrows: false,
-                dots: true,
+                arrows: true,
+                dots: false,
                 // autoplay: true,
                 infinite: true,
-                centerMode: true,
+                centerMode: false,
                 centerPadding: '0px',
                 responsive: [
+                    {
+                      breakpoint: 1440,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                      }
+                    },
                     {
                       breakpoint: 1024,
                       settings: {
@@ -117,11 +124,61 @@
         });
 
 
+/*-------------------------------------------------------------------------------
+    video popup
+-------------------------------------------------------------------------------*/
+function videoPopup() {
+  if ($('.popup-youtube').length) {
+      $('.popup-youtube').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          removalDelay: 160,
+          preloader: false,
+          fixedContentPos: false,
+          mainClass: 'mfp-with-zoom mfp-img-mobile',
+      });
+      $('.popup-youtube').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+          fixedContentPos: false
+      });
+  }
+}
+videoPopup();
+
+
+
+
     // $('#ctn-preloader').fadeOut(); // will first fade out the loading animation
     // $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
     // $('body').delay(350).css({'overflow':'visible'});
 
     // $(".preloader-wrap").delay(1500).fadeOut('slow');
 
+  //   function searchField() {
+  //     $('.search-field').on('focus', function () {
+  //         $('.search-form').addClass('active');
+  //     });
+
+  //     $('.search-field').on('blur', function () {
+  //         $('.search-form').removeClass('active');
+  //     });
+  // }
+  // searchField();
+  function oncliCkfn() {
+    $('.btn').on('click', function () {
+        $('.btn').addClass('active');
+    });
+
+    $('.btn').on('click', function () {
+        $('btn').removeClass('active');
+    });
+}
+oncliCkfn();
+
 
 })(jQuery);
+

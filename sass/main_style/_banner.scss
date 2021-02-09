@@ -11,9 +11,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background-image: -moz-linear-gradient(142deg, rgb(28, 187, 180) 0%, rgb(142, 243, 120) 99%);
-        background-image: -webkit-linear-gradient(142deg, rgb(28, 187, 180) 0%, rgb(142, 243, 120) 99%);
-        background-image: -ms-linear-gradient(142deg, rgb(28, 187, 180) 0%, rgb(142, 243, 120) 99%);
+        background-image: linear-gradient(142deg, rgb(28, 187, 180) 0%, rgb(142, 243, 120) 99%);
         opacity: 0.4;
     }
     .left_hero_wrap {
@@ -85,6 +83,108 @@
             content: "";
             right: -45px;
             transform: skew(0deg, -5deg);
+        }
+    }
+}
+
+/*========================= home two banner  ====================*/
+.banner_header.home-two {
+    .hero_lftsld_cont {
+        .home2_btn {
+            li {
+                display: inline-block;
+                a {
+                    margin-right: 20px;
+                }
+                a.popup_video {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    border: 1px solid $theme-bg;
+                    border-radius: 50%;
+                    @include transition(0.5s);
+                    margin: 0 auto;
+                    text-align: center;
+                    text-decoration: none;
+                    position: relative;
+                    color: $theme-bg;
+                    &::before {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        transform: translate(-50%, -50%);
+                        box-shadow: 0px 1px 15px 1px rgba(255, 107, 79, 1);
+                        content: "";
+                        z-index: 1;
+                        animation: videoplay 2s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+/*========================= home two banner  ====================*/
+
+.hme_three {
+    &::before {
+        background-image: linear-gradient(182deg, #266de8 29%, #ffffff 72%, #ffffff 99%);
+        opacity: 0.102;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .left_hero_wrap {
+        position: relative;
+        z-index: 4;
+        .hero_lftsld_cont{
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 90px;
+        }
+    }
+    /*--------second row video play------*/ 
+    .header_video_pup {
+        position: relative;
+        .video_play {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: $theme-bg;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include transition(0.5s);
+            .popup_video {
+                &::before {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    animation:  videoplay 2s linear infinite;
+                    box-shadow: 0px 1px 15px 1px $color-white;
+                    content: "";
+                    z-index: 1;
+                }
+                text-decoration: none;
+                i {
+                    color: $color-white;
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+            }
         }
     }
 }

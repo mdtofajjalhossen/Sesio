@@ -1,1 +1,136 @@
 /*========================= blog ====================*/
+.blog_wrap{
+    position: relative;
+    padding: 120px 0;
+    // background-color: $color-white;
+    background-color: $theme-color;
+    overflow-x: hidden;
+    .blog_wp_spone{
+        position: absolute;
+        left: 115px;
+        top: 117px;
+    }
+    .blog_wp_sptwo{
+        position: absolute;
+        left: 115px;
+        bottom: 310px;
+    }
+    .blog_wp_spthree{
+        position: absolute;
+        left: 142px;
+        bottom: 123px;
+    }
+    .blog_wp_spfour{
+        position: absolute;
+        left: 426px;
+        top: 70px;
+    }
+    .blog_wp_spfive{
+        position: absolute;
+        left: 115px;
+        top: 117px;
+    }
+    .blog_wp_spsix{
+        position: absolute;
+        right: 168px;
+        top: 130px;
+    }
+    .blog_wp_spseven{
+        position: absolute;
+        right: 353px;
+        top: 367px;
+    }
+    .blog_wp_speight{
+        position: absolute;
+        right: 268px;
+        bottom: 185px;
+    }
+    .blog_wp_spnine{
+        position: absolute;
+        right: 30%;
+        bottom: 30px;
+    }
+    .glbal_title{
+        color: $theme-color;
+        font-style: normal;
+        text-transform: $text-up;
+        margin-bottom: 10px;
+    }
+
+}
+    /* single blog style */ 
+    .single_blog_wrap{
+        background-color: $color-white;
+        padding: 50px 30px;
+        border: 1px solid #d1cfce;
+        border-radius: 5px;
+        @include transition(0.5s);
+        .singleblg_date{
+            font-size: $f-size;
+            line-height: $f-hight;
+            color: $theme-bg;
+            font-weight: $f-weight-bold;
+            font-family: $fontspectral;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        .singleblg_title{
+            font-family: $fontspectral;
+            font-weight: $f-weight-bold;
+            color: $theme-colortwo;
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 6px;
+        }
+        .singleblg_pra{
+            font-size: 16px;
+            line-height: $f-hight;
+            font-family: $fontkarla;
+            font-weight: $f-weight-r;
+            color: $theme-colorthree;
+            margin-bottom: 20px;
+        }
+        a {
+            font-size: $f-size;
+            line-height: 30px;
+            font-family: $fontspectral;
+            font-weight: $f-weight-bold;
+            color: $theme-color;
+            @include transition(0.5s);
+            text-decoration: none;
+            display: inline-block;
+            text-transform: $text-cap;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                right: 0;
+                bottom: 7px;
+                width: 0;
+                height: 1px;
+                background: $theme-bg;
+                content: "";
+                opacity: 0;
+                visibility: hidden;
+                @include transition(0.5s);
+
+                // border-color: $theme-bg;
+                // color: $theme-bg;
+            }
+            &:hover{
+                color: $theme-bg;
+                &::before{
+                    left: 0;
+                    right: auto;
+                    opacity: 1;
+                    visibility: visible;
+                    width: 100%;
+            }
+            }
+        }
+        &:hover {
+            border-color: $color-white;
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.08);
+        }
+    } 
+

@@ -27,6 +27,16 @@
             line-height: 100px;
             text-align: center;
         }
+        .dailly_cust{
+            background-color: #3045ff;
+        }
+        .dailly_down{
+            background-color: #f9265d;
+        }
+        .dailly_awards{
+            background-color: #00bf89;
+        }
+
         .client_border {
             position: absolute;
             width: 100%;
@@ -137,61 +147,64 @@
         }
 
         .testimonial_item{
-            border: 1px solid #ebebeb;
-            padding: 45px 30px ;
-            margin: 35px 15px 40px;
-            border-radius: 10px;
             outline: none;
-            background-color: $color-white;
-            @include transition(0.5s);
-            .testimonial_pra{
-                font-family: $fontkarla;
-                font-size: $f-size;
-                line-height: $f-hight;
-                font-weight: $f-weight-r;
-                color: $theme-colorthree;
-                margin-bottom: 60px;
-            }
-            .testimonial_profile{
-                .testimonial_details{
-                    h4 {
-                        font-family: $fontspectral;
-                        font-size: 24px;
-                        line-height: 36px;
-                        font-weight: $f-weight-bold;
-                        color: $theme-colortwo;
-                        text-transform: $text-cap;
-                    }
-                    p {
-                        font-family: $fontspectral;
-                        font-size: 16px;
-                        line-height: 36px;
-                        font-weight: $f-weight-bold;
-                        color: $theme-colortwo;
-                        text-transform: $text-cap;
-                    }
+            .test_itwrap {
+                      border: 1px solid #ebebeb;
+                       padding: 45px 30px ;
+                       background-color: $color-white;
+                       border-radius: 10px;
+                       outline: none;
+                     @include transition(0.5s);
+                .testimonial_pra{
+                    font-family: $fontkarla;
+                    font-size: $f-size;
+                    line-height: $f-hight;
+                    font-weight: $f-weight-r;
+                    color: $theme-colorthree;
+                    margin-bottom: 60px;
                 }
-                .testimonial_review{
-                    ul{
-                        li {
-                            margin-right: 5px;
-                            &:last-child {
-                                margin-right: 0;
-                            }
-                            a {
-                                font-size: 16px;
-                                color: #f7bd01;
-                                text-decoration: none;
+                .testimonial_profile{
+                    .testimonial_details{
+                        h4 {
+                            font-family: $fontspectral;
+                            font-size: 24px;
+                            line-height: 36px;
+                            font-weight: $f-weight-bold;
+                            color: $theme-colortwo;
+                            text-transform: $text-cap;
+                        }
+                        p {
+                            font-family: $fontspectral;
+                            font-size: 16px;
+                            line-height: 36px;
+                            font-weight: $f-weight-bold;
+                            color: $theme-colortwo;
+                            text-transform: $text-cap;
+                        }
+                    }
+                    .testimonial_review{
+                        ul{
+                            li {
+                                margin-right: 5px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                a {
+                                    font-size: 16px;
+                                    color: #f7bd01;
+                                    text-decoration: none;
+                                }
                             }
                         }
                     }
                 }
-            }
-            &:hover {
-                box-shadow: -4.77px 20.541px 40.4px 7.6px rgba(1, 174, 178, 0.06);
-                border: 1px solid $color-white;
+                &:hover {
+                    box-shadow: -4.77px 20.541px 40.4px 7.6px rgba(1, 174, 178, 0.06);
+                    border: 1px solid $color-white;
+                }
             }
         }
+
 
     }
 }
