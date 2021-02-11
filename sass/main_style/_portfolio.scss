@@ -1,6 +1,4 @@
-/*========================= portfolio ====================*/
-
-
+/*========================= project gallery ====================*/
 .project_gallery {
     position: relative;
     padding: 120px 0;
@@ -8,7 +6,7 @@
     &::before {
         position: absolute;
         content: "";
-        background-image: linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
+        background-image: linear-gradient(142deg, rgb(38, 109, 232) 29%, rgb(212, 128, 236) 72%, rgb(119, 42, 219) 99%);
         width: 400px;
         // height: 100%;
         height: 1966px;
@@ -68,12 +66,11 @@
         a {
             display: inline-block;
             width: 100%;
-            
+
             img {
                 width: 100%;
                 max-width: 100%;
                 border-radius: 5px;
-                
             }
         }
         .portfolio_content {
@@ -117,9 +114,9 @@
                 color: $color-white;
             }
         }
-        &:hover{
+        &:hover {
             &::before {
-                opacity: .7;
+                opacity: 0.7;
                 visibility: visible;
             }
             .portfolio_content {
@@ -127,9 +124,8 @@
                 opacity: 1;
                 visibility: visible;
                 z-index: 2;
-            }   
+            }
         }
-    
     }
     // portfolio description end
     // .View_details {
@@ -138,7 +134,64 @@
     // }
 }
 
+/*========================= home three project gallery ====================*/
 
+.project_gallery.home3projgallery {
+    padding: 60px 0 50px;
+    // background-image: linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
+    background: #fff url(../image/banner/portfolio-bg.jpg) no-repeat center/cover;
+    // opacity: 0.102;
+    z-index: -1;
+    &::before {
+        display: none;
+    }
 
+    .portfolio_dts_item{
+      background-color: $color-white;  
+      border: 1px solid #dfdfdf ;
+      padding-left: 30px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      padding-bottom: 15px;
+      @include transition (0.5s);
+      img {
+          max-width: 100%;
+          width: 100%;
+          border-radius: 5px;
+          margin-bottom: 12px;
 
+      }
+      .portfolio_dts_heading{
+        color: $theme-colortwo;
+        font-size: 24px;
+        font-weight: $f-weight-bold;
+        font-family: $fontkarla;
+        line-height: 32px;
+      }
+      .portfolio_dts_pra{
+        color: $theme-color;
+        font-size: 18px;
+        font-weight: $f-weight-bold;
+        font-family: $fontkarla;  
+      }
+      &:hover {
+          box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
+          border-color: $color-white;
+          cursor: pointer;
+      }
+    }
+}
 
+  .Rectangle_27 {
+    background-image: -moz-linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
+    background-image: -webkit-linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
+    background-image: linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
+    opacity: 0.102;
+    position: absolute;
+    left: 0px;
+    top: 4107px;
+    width: 1920px;
+    height: 1426px;
+    z-index: 143;
+  }
+  

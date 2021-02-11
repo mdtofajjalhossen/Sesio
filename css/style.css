@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*================================== all variable  ================================*/
+.Rectangle_26_copy {
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
+  box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
+  position: absolute;
+  left: 775px;
+  top: 4393px;
+  width: 370px;
+  height: 450px;
+  z-index: 158; }
+
 /*========================= mixin ====================*/
 /*========================= global ====================*/
 body {
@@ -1209,24 +1221,45 @@ h1, h2, h3, h4, h5, h6, p {
       padding: 11px 25px; }
 
 /*========================= home three choose us ====================*/
-.home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head {
-  position: relative;
-  display: inline-block;
-  color: #ff6b4f; }
-  .home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head::before {
-    position: absolute;
-    left: 0;
-    bottom: 7px;
-    width: 100%;
+.home2_chose_us.home3_choss_us {
+  padding: 120px 0;
+  background-color: #ffffff; }
+  .home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head {
+    position: relative;
     display: inline-block;
-    height: 1px;
-    background: #ff6b4f;
-    content: "";
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
-  .home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head:hover::before {
-    height: 5px; }
+    color: #ff6b4f; }
+    .home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head::before {
+      position: absolute;
+      left: 0;
+      bottom: 7px;
+      width: 100%;
+      display: inline-block;
+      height: 1px;
+      background: #ff6b4f;
+      content: "";
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .home2_chose_us.home3_choss_us .about_right_slide .about_right_min_head:hover::before {
+      height: 5px; }
+  .home2_chose_us.home3_choss_us .home2_choselimg .home2_choselimgmain {
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 3;
+    left: 0;
+    border-bottom-right-radius: 110px; }
+  .home2_chose_us.home3_choss_us .home2_choselimg .home3_choselimg_shaone {
+    position: absolute;
+    left: -60px;
+    top: -60px;
+    z-index: 1; }
+  .home2_chose_us.home3_choss_us .home2_choselimg .home3_choselimg_shtwo {
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    z-index: 1; }
 
 /*========================= Funnys ====================*/
 /*========================= play keyframes ====================*/
@@ -1321,7 +1354,7 @@ h1, h2, h3, h4, h5, h6, p {
           font-size: 20px;
           line-height: 50px; }
 
-/*========================= portfolio ====================*/
+/*========================= project gallery ====================*/
 .project_gallery {
   position: relative;
   padding: 120px 0;
@@ -1435,7 +1468,7 @@ h1, h2, h3, h4, h5, h6, p {
         font-weight: 400;
         color: #ffffff; }
     .project_gallery .portfolio_details:hover::before {
-      opacity: .7;
+      opacity: 0.7;
       visibility: visible; }
     .project_gallery .portfolio_details:hover .portfolio_content {
       -webkit-transform: translate(-50%) translate3d(0, 0px, 0);
@@ -1443,6 +1476,59 @@ h1, h2, h3, h4, h5, h6, p {
       opacity: 1;
       visibility: visible;
       z-index: 2; }
+
+/*========================= home three project gallery ====================*/
+.project_gallery.home3projgallery {
+  padding: 60px 0 50px;
+  background: #fff url(../image/banner/portfolio-bg.jpg) no-repeat center/cover;
+  z-index: -1; }
+  .project_gallery.home3projgallery::before {
+    display: none; }
+  .project_gallery.home3projgallery .portfolio_dts_item {
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .project_gallery.home3projgallery .portfolio_dts_item img {
+      max-width: 100%;
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 12px; }
+    .project_gallery.home3projgallery .portfolio_dts_item .portfolio_dts_heading {
+      color: #1b212f;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: "Karla", sans-serif;
+      line-height: 32px; }
+    .project_gallery.home3projgallery .portfolio_dts_item .portfolio_dts_pra {
+      color: #494d59;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "Karla", sans-serif; }
+    .project_gallery.home3projgallery .portfolio_dts_item:hover {
+      -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
+      box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
+      border-color: #ffffff;
+      cursor: pointer; }
+
+.Rectangle_27 {
+  background-image: -moz-linear-gradient(142deg, #266de8 29%, #d480ec 72%, #772adb 99%);
+  background-image: -webkit-linear-gradient(142deg, #266de8 29%, #d480ec 72%, #772adb 99%);
+  background-image: -webkit-linear-gradient(308deg, #266de8 29%, #d480ec 72%, #772adb 99%);
+  background-image: -o-linear-gradient(308deg, #266de8 29%, #d480ec 72%, #772adb 99%);
+  background-image: linear-gradient(142deg, #266de8 29%, #d480ec 72%, #772adb 99%);
+  opacity: 0.102;
+  position: absolute;
+  left: 0px;
+  top: 4107px;
+  width: 1920px;
+  height: 1426px;
+  z-index: 143; }
 
 /*========================= blog ====================*/
 .blog_wrap {
@@ -1561,6 +1647,46 @@ h1, h2, h3, h4, h5, h6, p {
     border-color: #ffffff;
     -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.08);
     box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.08); }
+
+/*========================= Home page three blog ====================*/
+.blogand_contact_wrap {
+  background: #fff url(../image/banner/blog-bg.jpg) no-repeat center/cover;
+  padding: 120px 0 100px; }
+  .blogand_contact_wrap .glbal_title {
+    position: relative;
+    display: inline-block; }
+    .blogand_contact_wrap .glbal_title::before {
+      position: absolute;
+      left: 0;
+      bottom: 6px;
+      width: 100%;
+      display: inline-block;
+      content: "";
+      height: 1px;
+      background: #ff6b4f;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .blogand_contact_wrap .glbal_title:hover::before {
+      height: 5px; }
+  .blogand_contact_wrap .single_blog_wrap {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 30px; }
+    .blogand_contact_wrap .single_blog_wrap .singleblg_date {
+      margin-bottom: 12px; }
+    .blogand_contact_wrap .single_blog_wrap .singleblg_title {
+      margin-bottom: 15px; }
+    .blogand_contact_wrap .single_blog_wrap .blog_img {
+      border-radius: 5px; }
+    .blogand_contact_wrap .single_blog_wrap:hover {
+      background-color: #ffffff;
+      -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.08);
+      box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.08); }
 
 /*========================= footer ====================*/
 .footer_wrap {

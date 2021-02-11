@@ -209,6 +209,8 @@
 
 /*========================= home three choose us ====================*/
 .home2_chose_us.home3_choss_us{
+    padding: 120px 0;
+    background-color: $color-white;
     .about_right_slide{
         .about_right_min_head{
             position: relative;
@@ -231,6 +233,30 @@
                     height: 5px;
                 }
             }
+        }
+    }
+    .home2_choselimg{
+        .home2_choselimgmain{
+            position: relative;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            z-index: 3;
+            left: 0;
+            border-bottom-right-radius: 110px;
+        }
+        .home3_choselimg_shaone{
+            position: absolute;
+            left: -60px;
+            top: -60px;
+            z-index: 1;
+
+        }
+        .home3_choselimg_shtwo{
+            position: absolute;
+            right: -60px;
+            bottom: -60px;
+            z-index: 1;
         }
     }
 }
