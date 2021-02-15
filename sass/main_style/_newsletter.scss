@@ -4,74 +4,86 @@
     background:#fff url("../image/shape/newsletter.png") no-repeat center/cover;
     margin-left: 200px;
     z-index: -1;
-    .newsletter_heading{
-        .newsletter_title{
-            font-family: $fontspectral;
-            font-size: 48px;
-            line-height: 52px;
-            font-weight: $f-weight-bold;
-            color: $theme-colortwo;
-            margin-bottom: 20px;
-        }
-         p{
-            font-family: $fontkarla;
-            color: $theme-color;
-            font-size: $f-size;
-            line-height: $f-hight;
-            font-weight: $f-weight-r;
-            max-width: 585px;
-            width: 100%;
-            margin: 0 auto 50px;
-            text-align: center;
-         }
+}
+
+.newsletter_heading{
+    .newsletter_title{
+        font-family: $fontspectral;
+        font-size: 48px;
+        line-height: 52px;
+        font-weight: $f-weight-bold;
+        color: $theme-colortwo;
+        margin-bottom: 20px;
     }
-    .newsletter_content{
-        position: relative;
-        max-width: 500px;
+     p{
+        font-family: $fontkarla;
+        color: $theme-color;
+        font-size: $f-size;
+        line-height: $f-hight;
+        font-weight: $f-weight-r;
+        max-width: 585px;
         width: 100%;
-        margin: 0 auto;
-    
-        .subscribe_box{
-            position: relative;
-            .input-group.subcribes {
-                input{
-                    border-radius: 50px;
-                    box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(51, 51, 51, 0.1);
-                    z-index: 0;
-                    background-color: $color-white;
-                    color: $theme-color;
-                   font-size:$f-size;
-                   line-height: $f-hight;
-                   font-family: $fontkarla;
-                   font-weight: $f-weight-r;
-                   border: 1px solid $color-white;
-                   padding: 0 10px 0 40px;
-                   height: 58px;
-                   &:focus {
-                    //    outline: none;
-                   }
+        margin: 0 auto 50px;
+        text-align: center;
+     }
+}
+.newsletter_content{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+    .subscribe_box{
+        position: relative;
+        .input-group.subcribes {
+            input{
+                border-radius: 50px;
+                box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(51, 51, 51, 0.1);
+                z-index: 0;
+                background-color: $color-white;
+                color: $theme-color;
+               font-size:$f-size;
+               line-height: $f-hight;
+               font-family: $fontkarla;
+               font-weight: $f-weight-r;
+               border: 1px solid $color-white;
+               padding: 0 10px 0 40px;
+               height: 58px;
+               &:focus {
+                //    outline: none;
+               }
+            }
+            .newsletter_btn{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                z-index: 3;
+                background: $theme-bg;
+                width: 44px;
+                height: 44px;
+                &:focus {
+                    outline: none;
                 }
-                .newsletter_btn{
-                    position: absolute;
-                    right: 10px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    border-radius: 50%;
-                    z-index: 3;
-                    background: $theme-bg;
-                    width: 44px;
-                    height: 44px;
-                    &:focus {
-                        outline: none;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $color-white;
-                        font-size: 20px;
-                        line-height: 50px;
-                    }
+                i {
+                    text-decoration: none;
+                    color: $color-white;
+                    font-size: 20px;
+                    line-height: 45px;
                 }
             }
         }
     }
 }
+
+/*========================= home three newsletter ====================*/
+.container.cus_consusb {
+    max-width: 1420px;
+    width: 100%;
+    background-image:linear-gradient(324deg, rgba(38, 109, 232, 0.10) 29%, rgba(212, 128, 236, 0.20) 72%, rgba(119, 42, 219,0.10) 99%);
+    padding: 80px 0;
+    border-radius: 20px;
+}
+
+  

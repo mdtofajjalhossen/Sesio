@@ -135,7 +135,10 @@
 /*========================= Home page three blog ====================*/
 .blogand_contact_wrap {
     background: #fff url(../image/banner/blog-bg.jpg) no-repeat center/cover;
-    padding: 120px 0 100px;
+    padding: 120px 0 0px;
+    .blogand_mbbttm {
+        margin-bottom: 120px;
+    }
     .glbal_title {
         position: relative;
         display: inline-block;
