@@ -219,114 +219,135 @@
     }
     .glbal_min_head {
     }
-    /*---------------testimonial design---------------------*/ 
+    /*---------------testimonial design---------------------*/
     .testimonial_item_active {
         .test_single_item {
-           img {
-               margin: 0 auto 23px;
-               text-align: center;
-           } 
-           .test_single_pra{
-               font-size: 24px;
-               line-height: 34px;
-               font-weight: $f-weight-medium;
-               color: $theme-color;
-               font-style: italic;
-               max-width: 780px;
-               width: 100%;
-               margin: 0 auto 20px;
-           }
-           .testimonial_review{
-               ul {
-                   margin-bottom: 25px;
-                   li {
-                       margin-right: 10px;
-                       a {
-                           color: #f7bd01;
-                           text-decoration: none;
-                           outline: none;
-                       }
-                       &:last-child {
-                           margin-right: 0;
-                       }
-                   }
-               }
-           }
-           .border_line{
-               max-width: 555px;
-               width: 100%;
-               height: 1px;
-               background-color: #d1cfce;
-               margin: 0 auto 20px;
-           }
-           .test_profile_item{
-               font-size: 30px;
-               font-weight: $f-weight-bold;
-               color: $theme-colortwo;
-               line-height: 46px;
-               font-family: $fontspectral;
-
-           }
-           .test_profile_pra{
-               font-family: $fontkarla;
-               font-weight: $f-weight-r;
-               color: $theme-color;
-               font-size: $f-size;
-               line-height: 32px;
-               margin-bottom: 30px;
-               span {
-                   font-weight: $f-weight-bold;
-               }
-
-           }
+            outline: none;
+            img {
+                margin: 0 auto 23px;
+                text-align: center;
+            }
+            .test_single_pra {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: $f-weight-medium;
+                color: $theme-color;
+                font-style: italic;
+                max-width: 780px;
+                width: 100%;
+                margin: 0 auto 20px;
+            }
+            .testimonial_review {
+                ul {
+                    margin-bottom: 25px;
+                    li {
+                        margin-right: 10px;
+                        a {
+                            color: #f7bd01;
+                            text-decoration: none;
+                            outline: none;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .border_line {
+                max-width: 555px;
+                width: 100%;
+                height: 1px;
+                background-color: #d1cfce;
+                margin: 0 auto 20px;
+            }
+            .test_profile_item {
+                font-size: 30px;
+                font-weight: $f-weight-bold;
+                color: $theme-colortwo;
+                line-height: 46px;
+                font-family: $fontspectral;
+            }
+            .test_profile_pra {
+                font-family: $fontkarla;
+                font-weight: $f-weight-r;
+                color: $theme-color;
+                font-size: $f-size;
+                line-height: 32px;
+                margin-bottom: 20px;
+                span {
+                    font-weight: $f-weight-bold;
+                }
+            }
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(51, 51, 51, 0.1);
+            background-color: $color-white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            z-index: 1;
+            @include transition(0.5s);
+            &::before {
+                font-family: "eleganticons";
+                color: #643c7b;
+                font-weight: 600;
+                @include transition(0.5s);
+            }
+            &.slick-prev {
+                &::before {
+                    content: "\23";
+                }
+            }
+            &.slick-next {
+                &::before {
+                    content: "\24";
+                }
+            }
+            &:hover {
+                background-color: $theme-bg;
+                box-shadow: none;
+                &::before {
+                    color: $color-white;
+                }
+            }
         }
     }
-
-}
-
-
-.testimonial_wrap {
+    // second slider item
     .testimonial-img-active {
         width: 380px;
         max-width: 100%;
         margin: 0 auto;
-        .img-item {
-            display: inline-block;
-            img {
-                display: inline-block;
-                transform: scale(1.2);
+        .slick-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .img-item {
+                display: block;
+                outline: none;
+                position: relative;
+                z-index: 3;
+                img {
+                    display: inline-block;
+                    transform: scale(1.2);
+                }
+                &.slick-active {
+                    position: relative;
+                    z-index: 3;
+                }
+                &.slick-center {
+                    transform: scale(1.4);
+                    position: relative;
+                    z-index: 5;
+                    height: 120px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
 }
-.testimonial_wrap .img-item.slick-slide.slick-current.slick-active.slick-center {
-    transform: scale(1.4);
-    position: relative;
-    z-index: 5;
-    height: 100px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.testimonial_wrap .img-item.slick-slide.slick-current.slick-active {
-    position: relative;
-    z-index: 3;
-}
-
-.slick-track {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.slick-initialized .slick-slide {
-    display: block;
-    outline: none;
-}
-// home page three testimonial
-
-// .testimonial-img-active .img-item{
-// display: inline-block !important;
-// }
-// .testimonial-img-active .img-item img{
-// display: inline-block !important;
-// }

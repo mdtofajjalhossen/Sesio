@@ -385,6 +385,9 @@ h1, h2, h3, h4, h5, h6, p {
       transform: skew(0deg, -5deg); }
 
 /*========================= home two banner  ====================*/
+.banner_header.home-two::before {
+  background: #222 url(../image/banner/); }
+
 .banner_header.home-two .hero_lftsld_cont .home2_btn li {
   display: inline-block; }
   .banner_header.home-two .hero_lftsld_cont .home2_btn li a {
@@ -1063,97 +1066,128 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 60px 0 120px;
   background-color: #2222;
   /*---------------testimonial design---------------------*/ }
-  .testimonial_wrap .testimonial_item_active .test_single_item img {
-    margin: 0 auto 23px;
-    text-align: center; }
-  .testimonial_wrap .testimonial_item_active .test_single_item .test_single_pra {
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 500;
-    color: #494d59;
-    font-style: italic;
-    max-width: 780px;
-    width: 100%;
-    margin: 0 auto 20px; }
-  .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul {
-    margin-bottom: 25px; }
-    .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul li {
-      margin-right: 10px; }
-      .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul li a {
-        color: #f7bd01;
-        text-decoration: none;
-        outline: none; }
-      .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul li:last-child {
-        margin-right: 0; }
-  .testimonial_wrap .testimonial_item_active .test_single_item .border_line {
-    max-width: 555px;
-    width: 100%;
-    height: 1px;
-    background-color: #d1cfce;
-    margin: 0 auto 20px; }
-  .testimonial_wrap .testimonial_item_active .test_single_item .test_profile_item {
-    font-size: 30px;
-    font-weight: 700;
-    color: #1b212f;
-    line-height: 46px;
-    font-family: "Spectral", serif; }
-  .testimonial_wrap .testimonial_item_active .test_single_item .test_profile_pra {
-    font-family: "Karla", sans-serif;
-    font-weight: 400;
-    color: #494d59;
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 30px; }
-    .testimonial_wrap .testimonial_item_active .test_single_item .test_profile_pra span {
-      font-weight: 700; }
-
-.testimonial_wrap .testimonial-img-active {
-  width: 380px;
-  max-width: 100%;
-  margin: 0 auto; }
-  .testimonial_wrap .testimonial-img-active .img-item {
-    display: inline-block; }
-    .testimonial_wrap .testimonial-img-active .img-item img {
-      display: inline-block;
-      -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-      transform: scale(1.2); }
-
-.testimonial_wrap .img-item.slick-slide.slick-current.slick-active.slick-center {
-  -webkit-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  transform: scale(1.4);
-  position: relative;
-  z-index: 5;
-  height: 100px !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.testimonial_wrap .img-item.slick-slide.slick-current.slick-active {
-  position: relative;
-  z-index: 3; }
-
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.slick-initialized .slick-slide {
-  display: block;
-  outline: none; }
+  .testimonial_wrap .testimonial_item_active .test_single_item {
+    outline: none; }
+    .testimonial_wrap .testimonial_item_active .test_single_item img {
+      margin: 0 auto 23px;
+      text-align: center; }
+    .testimonial_wrap .testimonial_item_active .test_single_item .test_single_pra {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 500;
+      color: #494d59;
+      font-style: italic;
+      max-width: 780px;
+      width: 100%;
+      margin: 0 auto 20px; }
+    .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul {
+      margin-bottom: 25px; }
+      .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul li {
+        margin-right: 10px; }
+        .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul li a {
+          color: #f7bd01;
+          text-decoration: none;
+          outline: none; }
+        .testimonial_wrap .testimonial_item_active .test_single_item .testimonial_review ul li:last-child {
+          margin-right: 0; }
+    .testimonial_wrap .testimonial_item_active .test_single_item .border_line {
+      max-width: 555px;
+      width: 100%;
+      height: 1px;
+      background-color: #d1cfce;
+      margin: 0 auto 20px; }
+    .testimonial_wrap .testimonial_item_active .test_single_item .test_profile_item {
+      font-size: 30px;
+      font-weight: 700;
+      color: #1b212f;
+      line-height: 46px;
+      font-family: "Spectral", serif; }
+    .testimonial_wrap .testimonial_item_active .test_single_item .test_profile_pra {
+      font-family: "Karla", sans-serif;
+      font-weight: 400;
+      color: #494d59;
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 20px; }
+      .testimonial_wrap .testimonial_item_active .test_single_item .test_profile_pra span {
+        font-weight: 700; }
+  .testimonial_wrap .testimonial_item_active .slick-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    outline: none;
+    -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(51, 51, 51, 0.1);
+    box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(51, 51, 51, 0.1);
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .testimonial_wrap .testimonial_item_active .slick-arrow::before {
+      font-family: "eleganticons";
+      color: #643c7b;
+      font-weight: 600;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .testimonial_wrap .testimonial_item_active .slick-arrow.slick-prev::before {
+      content: "\23"; }
+    .testimonial_wrap .testimonial_item_active .slick-arrow.slick-next::before {
+      content: "\24"; }
+    .testimonial_wrap .testimonial_item_active .slick-arrow:hover {
+      background-color: #ff6b4f;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .testimonial_wrap .testimonial_item_active .slick-arrow:hover::before {
+        color: #ffffff; }
+  .testimonial_wrap .testimonial-img-active {
+    width: 380px;
+    max-width: 100%;
+    margin: 0 auto; }
+    .testimonial_wrap .testimonial-img-active .slick-track {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .testimonial_wrap .testimonial-img-active .slick-track .img-item {
+        display: block;
+        outline: none;
+        position: relative;
+        z-index: 3; }
+        .testimonial_wrap .testimonial-img-active .slick-track .img-item img {
+          display: inline-block;
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+        .testimonial_wrap .testimonial-img-active .slick-track .img-item.slick-active {
+          position: relative;
+          z-index: 3; }
+        .testimonial_wrap .testimonial-img-active .slick-track .img-item.slick-center {
+          -webkit-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+          transform: scale(1.4);
+          position: relative;
+          z-index: 5;
+          height: 120px !important;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
 
 /*========================= video ====================*/
 /*========================= chooseus ====================*/

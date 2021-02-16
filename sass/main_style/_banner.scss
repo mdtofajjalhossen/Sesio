@@ -89,6 +89,9 @@
 
 /*========================= home two banner  ====================*/
 .banner_header.home-two {
+    &::before {
+        background: #222 url(../image/banner/);
+    }
     .hero_lftsld_cont {
         .home2_btn {
             li {
