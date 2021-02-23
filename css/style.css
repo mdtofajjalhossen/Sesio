@@ -385,46 +385,98 @@ h1, h2, h3, h4, h5, h6, p {
       transform: skew(0deg, -5deg); }
 
 /*========================= home two banner  ====================*/
-.banner_header.home-two::before {
-  background: #222 url(../image/banner/); }
-
-.banner_header.home-two .hero_lftsld_cont .home2_btn li {
-  display: inline-block; }
-  .banner_header.home-two .hero_lftsld_cont .home2_btn li a {
-    margin-right: 20px; }
-  .banner_header.home-two .hero_lftsld_cont .home2_btn li a.popup_video {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border: 1px solid #ff6b4f;
-    border-radius: 50%;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    margin: 0 auto;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    color: #ff6b4f; }
-    .banner_header.home-two .hero_lftsld_cont .home2_btn li a.popup_video::before {
+.banner_header.home-two {
+  padding-top: 190px;
+  overflow: hidden; }
+  .banner_header.home-two::before {
+    background: #222 url(../image/banner/02_Index.jpg) no-repeat center/cover; }
+  .banner_header.home-two .left_hero_wrap {
+    padding-top: 245px; }
+    .banner_header.home-two .left_hero_wrap .hero_lftsld_cont .home2_btn li {
+      display: inline-block; }
+      .banner_header.home-two .left_hero_wrap .hero_lftsld_cont .home2_btn li a {
+        margin-right: 20px; }
+      .banner_header.home-two .left_hero_wrap .hero_lftsld_cont .home2_btn li a.popup_video {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #ff6b4f;
+        border-radius: 50%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        color: #ff6b4f; }
+        .banner_header.home-two .left_hero_wrap .hero_lftsld_cont .home2_btn li a.popup_video::before {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          -webkit-box-shadow: 0px 1px 15px 1px #ff6b4f;
+          box-shadow: 0px 1px 15px 1px #ff6b4f;
+          content: "";
+          z-index: 1;
+          -webkit-animation: videoplay 2s linear infinite;
+          animation: videoplay 2s linear infinite; }
+  .banner_header.home-two .img_right_slide {
+    position: relative; }
+    .banner_header.home-two .img_right_slide img {
+      border-bottom-left-radius: 100px; }
+    .banner_header.home-two .img_right_slide::before {
+      display: none; }
+    .banner_header.home-two .img_right_slide .video_play {
       position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 100%;
-      height: 100%;
+      left: 110px;
+      bottom: 90px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      -webkit-box-shadow: 0px 1px 15px 1px #ff6b4f;
-      box-shadow: 0px 1px 15px 1px #ff6b4f;
-      content: "";
-      z-index: 1;
-      -webkit-animation: videoplay 2s linear infinite;
-      animation: videoplay 2s linear infinite; }
+      background-color: #ff6b4f;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .banner_header.home-two .img_right_slide .video_play .popup_video {
+        text-decoration: none; }
+        .banner_header.home-two .img_right_slide .video_play .popup_video::before {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          -webkit-animation: videoplay 2s linear infinite;
+          animation: videoplay 2s linear infinite;
+          -webkit-box-shadow: 0px 1px 15px 1px #ffffff;
+          box-shadow: 0px 1px 15px 1px #ffffff;
+          content: "";
+          z-index: 1; }
+        .banner_header.home-two .img_right_slide .video_play .popup_video i {
+          color: #ffffff;
+          font-size: 30px;
+          line-height: 30px; }
 
-/*========================= home two banner  ====================*/
+/*========================= home three banner  ====================*/
 .hme_three {
   /*--------second row video play------*/ }
   .hme_three::before {
