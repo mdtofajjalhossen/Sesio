@@ -90,9 +90,47 @@
 /*========================= home two banner  ====================*/
 .banner_header.home-two {
     padding-top: 190px;
+    padding-bottom: 150px;
     overflow: hidden;
     &::before {
-        background: #222 url(../image/banner/02_Index.jpg) no-repeat center/cover;
+        background: #ff6b4f url(../image/banner/02_Index.jpg) no-repeat center/cover;
+    }
+    &::after {
+        border-bottom: 1px solid #e8e7e6;
+        max-width: 1520px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        content: "";
+        left: 0;
+        right: 0;
+        margin: 0 auto 25px;
+        text-align: center;
+        display: block;
+        
+    }
+    .go_down {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        background: #fff;
+        border: 1px solid #e8e7e6;
+        border-radius: 50px;
+        a {
+            text-decoration: none;
+            color: $theme-bg;
+            font-size: 35px;
+            line-height: 35px;
+        }
     }
     .left_hero_wrap{
         padding-top: 245px;
@@ -240,3 +278,4 @@
         }
     }
 }
+

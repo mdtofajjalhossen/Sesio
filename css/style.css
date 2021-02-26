@@ -387,9 +387,49 @@ h1, h2, h3, h4, h5, h6, p {
 /*========================= home two banner  ====================*/
 .banner_header.home-two {
   padding-top: 190px;
+  padding-bottom: 150px;
   overflow: hidden; }
   .banner_header.home-two::before {
-    background: #222 url(../image/banner/02_Index.jpg) no-repeat center/cover; }
+    background: #ff6b4f url(../image/banner/02_Index.jpg) no-repeat center/cover; }
+  .banner_header.home-two::after {
+    border-bottom: 1px solid #e8e7e6;
+    max-width: 1520px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto 25px;
+    text-align: center;
+    display: block; }
+  .banner_header.home-two .go_down {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #e8e7e6;
+    border-radius: 50px; }
+    .banner_header.home-two .go_down a {
+      text-decoration: none;
+      color: #ff6b4f;
+      font-size: 35px;
+      line-height: 35px; }
   .banner_header.home-two .left_hero_wrap {
     padding-top: 245px; }
     .banner_header.home-two .left_hero_wrap .hero_lftsld_cont .home2_btn li {
@@ -852,8 +892,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*========================= home two service ====================*/
 .service_hometwo_wrap {
-  background-color: #fff;
-  padding: 120px 0; }
+  background-color: #ffffff;
+  padding: 150px 0 60px; }
 
 .service_item_wrap {
   background: #fdf8e8;
@@ -1642,10 +1682,7 @@ h1, h2, h3, h4, h5, h6, p {
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
-        margin: 0 auto;
-        border-bottom: 1px solid transparent; }
-        .project_gallery .portfolio_details .portfolio_content .portfolio_btnm:hover {
-          border-bottom: 1px solid #ffffff; }
+        margin: 0 auto; }
       .project_gallery .portfolio_details .portfolio_content .portfolio_pra {
         font-size: 18px;
         font-family: "Karla", sans-serif;
@@ -1660,6 +1697,42 @@ h1, h2, h3, h4, h5, h6, p {
       opacity: 1;
       visibility: visible;
       z-index: 2; }
+
+/*========================= home three project gallery ====================*/
+.project_gallery.home2pglly.home3projgallery .portfolio_dts_item {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 0; }
+  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item img {
+    position: relative;
+    margin-bottom: 0; }
+  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item .prot_content {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item:hover::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: red;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    visibility: visible;
+    z-index: 1;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item:hover .prot_content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translate3d(0, 0px, 0px);
+    transform: translateY(-50%) translate3d(0, 0px, 0px);
+    color: #ffffff;
+    z-index: 5; }
 
 /*========================= home three project gallery ====================*/
 .project_gallery.home3projgallery {
@@ -1699,20 +1772,6 @@ h1, h2, h3, h4, h5, h6, p {
       box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
       border-color: #ffffff;
       cursor: pointer; }
-
-.Rectangle_27 {
-  background-image: -moz-linear-gradient(142deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-  background-image: -webkit-linear-gradient(142deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-  background-image: -webkit-linear-gradient(308deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-  background-image: -o-linear-gradient(308deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-  background-image: linear-gradient(142deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-  opacity: 0.102;
-  position: absolute;
-  left: 0px;
-  top: 4107px;
-  width: 1920px;
-  height: 1426px;
-  z-index: 143; }
 
 /*========================= blog ====================*/
 .blog_wrap {

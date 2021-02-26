@@ -102,10 +102,6 @@
                 display: inline-block;
                 @include transition(0.5s);
                 margin: 0 auto;
-                border-bottom: 1px solid transparent;
-                &:hover {
-                    border-bottom: 1px solid $color-white;
-                }
             }
             .portfolio_pra {
                 font-size: $f-size;
@@ -133,6 +129,56 @@
     //     margin-bottom: 50px;
     // }
 }
+/*========================= home three project gallery ====================*/
+.project_gallery.home2pglly.home3projgallery{
+    .portfolio_dts_item{
+        position: relative;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        img {
+            position: relative;
+            margin-bottom: 0;
+            
+        }
+        .prot_content{
+            @include transition (0.5s);
+        }
+        &:hover {
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: red;
+                left: 0;
+                top: 0;
+                opacity: 0.5;
+                visibility: visible;
+                z-index: 1;
+                border-radius: 5px;
+                @include transition (0.5s);
+            }
+            img {
+                &::before {
+                  
+                }
+
+            }
+
+           .prot_content {
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%) translate3d(0, 0px, 0px);
+               color: $color-white;
+            //    @include transition(0.50s);
+               z-index: 5;
+           } 
+        }
+    }
+}
+
+
 
 /*========================= home three project gallery ====================*/
 
@@ -182,16 +228,3 @@
     }
 }
 
-  .Rectangle_27 {
-    background-image: -moz-linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
-    background-image: -webkit-linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
-    background-image: linear-gradient( 142deg, rgb(38,109,232) 29%, rgb(212,128,236) 72%, rgb(119,42,219) 99%);
-    opacity: 0.102;
-    position: absolute;
-    left: 0px;
-    top: 4107px;
-    width: 1920px;
-    height: 1426px;
-    z-index: 143;
-  }
-  

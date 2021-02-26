@@ -95,6 +95,17 @@
   // }
   // drop_down();
 
+      //js for scroll to section
+      $('.go_down a[href^="#"]').on('click', function (event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - 80
+            }, 800);
+        }
+    });
+
   $('.grid').imagesLoaded(function () {
     // init Isotope
     var $grid = $('.grid').isotope({
