@@ -130,55 +130,68 @@
     // }
 }
 /*========================= home three project gallery ====================*/
-.project_gallery.home2pglly.home3projgallery{
-    .portfolio_dts_item{
+.project_gallery.home2pglly.home3projgallery {
+    .portfolio_dts_item {
         position: relative;
         background-color: transparent;
-        border: none;
+        border: none !important;
         padding: 0;
-        img {
+        box-shadow: none !important;
+        .portfolio_item_img {
             position: relative;
-            margin-bottom: 0;
-            
-        }
-        .prot_content{
-            @include transition (0.5s);
-        }
-        &:hover {
-            &::before {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: red;
-                left: 0;
-                top: 0;
-                opacity: 0.5;
-                visibility: visible;
-                z-index: 1;
-                border-radius: 5px;
-                @include transition (0.5s);
+            .port_img {
+                margin-bottom: 0;
             }
-            img {
-                &::before {
-                  
+            .popupimg{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transform: translateY(-50%);
+                content: "";
+                text-decoration: none;
+                background-color: $theme-bg;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                @include transition (0.8s);
+                opacity: 0;
+                visibility: hidden;
+                z-index: 5;
+                i {
+                    font-size: 30px;
+                    color: $color-white;
+                    line-height: 1;
                 }
 
             }
+        }
 
-           .prot_content {
-               position: absolute;
-               top: 50%;
-               transform: translateY(-50%) translate3d(0, 0px, 0px);
-               color: $color-white;
-            //    @include transition(0.50s);
-               z-index: 5;
-           } 
+        .prot_content {
+            @include transition(0.5s);
+        }
+        &:hover {
+            .popupimg{
+                opacity: 1;
+                visibility: visible;
+            }
+            .prot_content {
+                transform: translateY(-70px);
+                z-index: 5;
+                .portfolio_dts_heading {
+                    color: $theme-bg;
+                }
+                .portfolio_dts_pra {
+                    color: $theme-bg;
+                }
+            }
         }
     }
 }
-
-
 
 /*========================= home three project gallery ====================*/
 
@@ -192,39 +205,37 @@
         display: none;
     }
 
-    .portfolio_dts_item{
-      background-color: $color-white;  
-      border: 1px solid #dfdfdf ;
-      padding-left: 30px;
-      margin-bottom: 30px;
-      border-radius: 5px;
-      padding-bottom: 15px;
-      @include transition (0.5s);
-      img {
-          max-width: 100%;
-          width: 100%;
-          border-radius: 5px;
-          margin-bottom: 12px;
-
-      }
-      .portfolio_dts_heading{
-        color: $theme-colortwo;
-        font-size: 24px;
-        font-weight: $f-weight-bold;
-        font-family: $fontkarla;
-        line-height: 32px;
-      }
-      .portfolio_dts_pra{
-        color: $theme-color;
-        font-size: 18px;
-        font-weight: $f-weight-bold;
-        font-family: $fontkarla;  
-      }
-      &:hover {
-          box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
-          border-color: $color-white;
-          cursor: pointer;
-      }
+    .portfolio_dts_item {
+        background-color: $color-white;
+        border: 1px solid #dfdfdf;
+        padding-left: 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        padding-bottom: 15px;
+        @include transition(0.5s);
+        img {
+            max-width: 100%;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+        .portfolio_dts_heading {
+            color: $theme-colortwo;
+            font-size: 24px;
+            font-weight: $f-weight-bold;
+            font-family: $fontkarla;
+            line-height: 32px;
+        }
+        .portfolio_dts_pra {
+            color: $theme-color;
+            font-size: 18px;
+            font-weight: $f-weight-bold;
+            font-family: $fontkarla;
+        }
+        &:hover {
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
+            border-color: $color-white;
+            cursor: pointer;
+        }
     }
 }
-

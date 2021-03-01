@@ -1702,37 +1702,64 @@ h1, h2, h3, h4, h5, h6, p {
 .project_gallery.home2pglly.home3projgallery .portfolio_dts_item {
   position: relative;
   background-color: transparent;
-  border: none;
-  padding: 0; }
-  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item img {
-    position: relative;
-    margin-bottom: 0; }
+  border: none !important;
+  padding: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
+  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item .portfolio_item_img {
+    position: relative; }
+    .project_gallery.home2pglly.home3projgallery .portfolio_dts_item .portfolio_item_img .port_img {
+      margin-bottom: 0; }
+    .project_gallery.home2pglly.home3projgallery .portfolio_dts_item .portfolio_item_img .popupimg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      content: "";
+      text-decoration: none;
+      background-color: #ff6b4f;
+      width: 60px;
+      height: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 50%;
+      -webkit-transition: all 0.8s;
+      -o-transition: all 0.8s;
+      transition: all 0.8s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 5; }
+      .project_gallery.home2pglly.home3projgallery .portfolio_dts_item .portfolio_item_img .popupimg i {
+        font-size: 30px;
+        color: #ffffff;
+        line-height: 1; }
   .project_gallery.home2pglly.home3projgallery .portfolio_dts_item .prot_content {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; }
-  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item:hover::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: red;
-    left: 0;
-    top: 0;
-    opacity: 0.5;
-    visibility: visible;
-    z-index: 1;
-    border-radius: 5px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
+  .project_gallery.home2pglly.home3projgallery .portfolio_dts_item:hover .popupimg {
+    opacity: 1;
+    visibility: visible; }
   .project_gallery.home2pglly.home3projgallery .portfolio_dts_item:hover .prot_content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%) translate3d(0, 0px, 0px);
-    transform: translateY(-50%) translate3d(0, 0px, 0px);
-    color: #ffffff;
+    -webkit-transform: translateY(-70px);
+    -ms-transform: translateY(-70px);
+    transform: translateY(-70px);
     z-index: 5; }
+    .project_gallery.home2pglly.home3projgallery .portfolio_dts_item:hover .prot_content .portfolio_dts_heading {
+      color: #ff6b4f; }
+    .project_gallery.home2pglly.home3projgallery .portfolio_dts_item:hover .prot_content .portfolio_dts_pra {
+      color: #ff6b4f; }
 
 /*========================= home three project gallery ====================*/
 .project_gallery.home3projgallery {

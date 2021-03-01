@@ -161,6 +161,18 @@
   videoPopup();
 
 
+// image gallery
+ function onclickimg() {
+  $('.popupimg').magnificPopup({
+    type: 'image',
+    // other options
+    gallery: {
+      enabled: true
+    },
+  });
+ }
+ onclickimg();
+
 
 
   // $('#ctn-preloader').fadeOut(); // will first fade out the loading animation
