@@ -1,7 +1,6 @@
 /*========================= about ====================*/
 .about_wrap {
-    padding: 120px 0;
-
+    padding: 120px 0 100px;
 }
 .about_left_img {
     position: relative;
@@ -36,9 +35,6 @@
                 animation: videoplay 2s linear infinite;
             }
             
-            img {
-
-            }
         }
     }
     &::before {
@@ -90,9 +86,6 @@
     }
     .about_right_pratwo {
         margin-bottom: 55px;
-    }
-    a {
-
     }
 }
 /*========================= home page two about ====================*/
@@ -228,9 +221,6 @@
         position: absolute;
         top: 240px;
         left: 39%;
-        img {
-            
-        }
     }
     .about_two_left_img{
         .Abt_three_bg {

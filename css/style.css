@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*========================= about ====================*/
 .about_wrap {
-  padding: 120px 0; }
+  padding: 120px 0 100px; }
 
 .about_left_img {
   position: relative;
@@ -1620,23 +1620,15 @@ h1, h2, h3, h4, h5, h6, p {
 /*========================= project gallery ====================*/
 .project_gallery {
   position: relative;
-  padding: 120px 0;
+  padding: 60px 0 120px;
   overflow-x: hidden; }
-  .project_gallery::before {
-    position: absolute;
-    content: "";
-    background-image: -webkit-linear-gradient(308deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-    background-image: -o-linear-gradient(308deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-    background-image: linear-gradient(142deg, #266de8 29%, #d480ec 72%, #772adb 99%);
-    width: 400px;
-    height: 1966px;
-    left: 600px;
-    -webkit-transform: skew(-55deg, 25deg);
-    -ms-transform: skew(-55deg, 25deg);
-    transform: skew(-55deg, 25deg);
-    opacity: 0.1;
-    max-width: 100%;
-    z-index: -1; }
+  .project_gallery .Proj_center .glbal_min_head {
+    max-width: 420px;
+    margin: 0 auto 36px;
+    text-align: center; }
+  .project_gallery .service_row_ .glbal_min_head {
+    margin: 0 auto 45px;
+    text-align: center; }
   .project_gallery .portfolio_menu {
     display: block;
     margin: 0 auto 60px;
