@@ -1,9 +1,27 @@
 /*========================= newsletter ====================*/
 .newsletter_wrap {
     padding: 100px 0;
-    background:#fff url("../image/shape/newsletter.png") no-repeat center/cover;
+    background:#fff url("../image/shape/newsletter-bg.png") no-repeat center/cover;
     margin-left: 200px;
     z-index: -1;
+    position: relative;
+    overflow-x: hidden;
+    .newsnoise_one {
+        position: absolute;
+        left: 13%;
+        bottom: 130px;
+    }
+    .newsnoise_two {
+        position: absolute;
+        right: 9%;
+        top: 55px;
+    }
+    .newsnoise_three {
+        position: absolute;
+        right: 27%;
+        bottom: 34%;
+    }
+
 }
 
 .newsletter_heading{
@@ -50,7 +68,7 @@
                padding: 0 10px 0 40px;
                height: 58px;
                &:focus {
-                //    outline: none;
+                   outline: none;
                }
             }
             .newsletter_btn{

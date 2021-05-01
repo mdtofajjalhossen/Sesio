@@ -94,11 +94,17 @@
 }
 
 
-/*========================= home two service ====================*/
+/*========================= home page two service ====================*/
 
 .service_hometwo_wrap {
     background-color: $color-white;
-    padding: 150px 0 60px;
+    padding: 110px 0 60px;
+    .glbal_title{
+        color: $theme-color;
+        text-transform: uppercase;
+        font-style: normal;
+        margin-bottom: 12px;
+    }
 }
 .service_item_wrap {
     background: #fdf8e8;
@@ -113,9 +119,6 @@
         line-height: 90px;
         border-radius: 50%;
         @include transition(0.5s);
-        img {
-
-        }
     }
     &:hover {
         transform: translateY(-5px);
@@ -127,6 +130,24 @@
         font-weight: $f-weight-bold;
         color: $theme-colortwo;
         text-transform: $text-cap;
+    }
+    &.clenlayouts {
+        background-color: #e9eafb;
+        a {
+        background-color: #3045ff;
+        }
+    }
+    &.gsupports {
+        background-color: #fee9ee;
+        a {
+        background-color: #f9265d;
+        }
+    }
+    &.wdcouments {
+        background-color: #e5f8f3;
+        a {
+        background-color: #00bf89;
+        }
     }
 }
 

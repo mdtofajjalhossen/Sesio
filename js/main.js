@@ -255,4 +255,18 @@
     centerPadding: 0,
   });
 
+  /*-------------------------------------------------------------------------------
+    Counter js
+-------------------------------------------------------------------------------*/
+function counting_data(){
+  var counter = $(".counter");
+  if( counter.length){
+      counter.counterUp({
+          delay:1,
+          time:2000
+      });
+  }
+} 
+counting_data();
+
 })(jQuery);     

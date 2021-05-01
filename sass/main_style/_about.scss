@@ -1,6 +1,46 @@
 /*========================= about ====================*/
 .about_wrap {
     padding: 120px 0 100px;
+    position: relative;
+    .chose_noise_one{
+        position: absolute;
+        top: 200px;
+        left: 215px;
+    }
+    .chose_noise_two{
+        position: absolute;
+        top: 56%;
+        left: 15%;
+        animation: pulse 1s infinite alternate;
+    }
+
+    .chose_noise_three{
+        position: absolute;
+        left: 115px;
+        bottom: 140px;
+        
+    }
+    .chose_noise_four{
+        position: absolute;
+        left: 40%;
+        top: 70px;
+    }
+    .chose_noise_six{
+        position: absolute;
+        right: 17%;
+        top: 140px;
+    }
+    .chose_noise_seven{
+        position: absolute;
+        right: 9%;
+        bottom: 45%;
+    }
+    .chose_noise_eight{
+        position: absolute;
+        right: 26%;
+        bottom: 18%;
+        animation: slide 2s linear infinite;
+    }
 }
 .about_left_img {
     position: relative;
