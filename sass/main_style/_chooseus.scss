@@ -92,11 +92,6 @@
         .video_play {
             a.popup_video {
                 z-index: 6;
-                &::after {
-                }
-                img {
-
-                }
             }
         }
         &::before {
@@ -130,7 +125,7 @@
 /*========================= home-two choose us ====================*/
 .home2_chose_us {
     background-color: $color-white ;
-    padding: 60px 0;
+    padding: 65px 0 160px;
     .home2_choselimg{
         position: relative;
         .home2_choselimgmain{
@@ -159,9 +154,6 @@
         }
         .about_right_head{
             margin-bottom: 10px;
-        }
-        .about_right_pra{
-
         }
         .choseus_check{
             ul {

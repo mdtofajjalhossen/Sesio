@@ -1,86 +1,88 @@
 /*========================= countdown and  happy client home page one ====================*/
-.client_prof {
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    border-radius: 50%;
+.countdwrapper {
     margin-bottom: 30px;
-    a {
+    .client_prof {
+        position: relative;
         display: inline-block;
-        background-color: #fddb64;
+        padding: 15px;
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
-    }
-    .dailly_cust {
-        background-color: #3045ff;
-    }
-    .dailly_down {
-        background-color: #f9265d;
-    }
-    .dailly_awards {
-        background-color: #00bf89;
-    }
-
-    .client_border {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 1px solid #eeeef0;
-        top: 0;
-        left: 0;
-        border-radius: 50%;
-        animation: move 10s linear infinite;
-
-        &::before {
+        margin-bottom: 30px;
+        a {
+            display: inline-block;
+            background-color: #fddb64;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .dailly_cust {
+            background-color: #3045ff;
+        }
+        .dailly_down {
+            background-color: #f9265d;
+        }
+        .dailly_awards {
+            background-color: #00bf89;
+        }
+    
+        .client_border {
             position: absolute;
-            content: "";
-            width: 10px;
-            height: 10px;
-            background: #01aeb2;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #eeeef0;
+            top: 0;
             left: 0;
             border-radius: 50%;
-            line-height: 0px;
-            top: 35px;
-        }
-        &::after {
-            position: absolute;
-            content: "";
-            width: 10px;
-            height: 10px;
-            background: #ff6b4f;
-            right: 0;
-            border-radius: 50%;
-            line-height: 10px;
-            bottom: 35px;
+            animation: move 10s linear infinite;
+    
+            &::before {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #01aeb2;
+                left: 0;
+                border-radius: 50%;
+                line-height: 0px;
+                top: 35px;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #ff6b4f;
+                right: 0;
+                border-radius: 50%;
+                line-height: 10px;
+                bottom: 35px;
+            }
         }
     }
-}
-.happy_details {
-    font-family: $fontspectral;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: $f-weight-bold;
-    color: $theme-colortwo;
-    text-transform: $text-cap;
-    margin-bottom: 24px;
-}
-.happy_count {
-    font-family: $fontspectral;
-    font-size: 48px;
-    line-height: 46px;
-    font-weight: $f-weight-bold;
-    color: $theme-colorfour;
-}
-@keyframes move {
-    0% {
-        transform: rotate(-360deg);
+    .happy_details {
+        font-family: $fontspectral;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: $f-weight-bold;
+        color: $theme-colortwo;
+        text-transform: $text-cap;
+        margin-bottom: 24px;
+    }
+    .happy_count {
+        font-family: $fontspectral;
+        font-size: 48px;
+        line-height: 46px;
+        font-weight: $f-weight-bold;
+        color: $theme-colorfour;
     }
 }
+
+
+
 /*========================= countdown and  happy client home two  ====================*/
 .our_customer_wrap.hometwocount {
+    padding: 100px 0 60px;
     .happy_details {
         color: $color-white;
     }

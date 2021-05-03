@@ -1,4 +1,5 @@
 /*========================= testimonial ====================*/
+
 .happy_client_wrap {
     background-color: $color-white;
     padding: 120px 0;
@@ -80,6 +81,7 @@
             background-color: $color-white;
             border-radius: 10px;
             outline: none;
+            margin-bottom: 30px;
             @include transition(0.5s);
             .testimonial_pra {
                 font-family: $fontkarla;
@@ -125,26 +127,26 @@
                 }
             }
             &:hover {
-                box-shadow: -4.77px 20.541px 40.4px 7.6px rgba(1, 174, 178, 0.06);
+                box-shadow: -4.77px 15.541px 22.4px 1.6px rgba(255, 107, 79, 0.06);
                 border: 1px solid $color-white;
             }
         }
     }
 }
-
 /*========================= Home page two ====================*/
 .our_customer_wrap {
     background-color: $theme-colortwo;
     padding: 100px 0;
 }
-.happy_details {
-    color: $theme-colortwo;
-}
-.happy_count {
-    color: $theme-colortwo;
-}
+// .happy_details {
+//     color: $theme-colortwo;
+// }
+// .happy_count {
+//     color: $theme-colortwo;
+// }
 
-//
+
+
 .home_two_testimonial_wrap {
     position: relative;
     overflow-x: hidden;
@@ -161,6 +163,16 @@
         background-color: rgb(37, 200, 224);
         opacity: 0.031;
         border-bottom-left-radius: 80px;
+    }
+    .glbal_title {
+        text-align: left;
+        color: $theme-color;
+    }
+    .glbal_min_head{
+        text-align: left;
+        margin-left: 0;
+        color: $theme-colortwo;
+        margin-bottom: 45px;
     }
 }
 
@@ -306,3 +318,19 @@
         }
     }
 }
+
+
+
+
+// .Rectangle_14 {
+//     border-radius: 10px;
+//     background-color: rgb(255, 255, 255);
+//     box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.08);
+//     position: absolute;
+//     left: 375px;
+//     top: 5972px;
+//     width: 370px;
+//     height: 400px;
+//     z-index: 253;
+//   }
+  

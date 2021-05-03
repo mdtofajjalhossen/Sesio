@@ -168,6 +168,9 @@ h1, h2, h3, h4, h5, h6, p {
 .mb50 {
   margin-bottom: 50px; }
 
+.pt25 {
+  padding-top: 25px; }
+
 .pt50 {
   padding-top: 50px; }
 
@@ -1089,6 +1092,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #ffffff;
     border-radius: 10px;
     outline: none;
+    margin-bottom: 30px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s; }
@@ -1122,20 +1126,14 @@ h1, h2, h3, h4, h5, h6, p {
         color: #f7bd01;
         text-decoration: none; }
     .testimonial_slider .testimonial_item .test_itwrap:hover {
-      -webkit-box-shadow: -4.77px 20.541px 40.4px 7.6px rgba(1, 174, 178, 0.06);
-      box-shadow: -4.77px 20.541px 40.4px 7.6px rgba(1, 174, 178, 0.06);
+      -webkit-box-shadow: -4.77px 15.541px 22.4px 1.6px rgba(255, 107, 79, 0.06);
+      box-shadow: -4.77px 15.541px 22.4px 1.6px rgba(255, 107, 79, 0.06);
       border: 1px solid #ffffff; }
 
 /*========================= Home page two ====================*/
 .our_customer_wrap {
   background-color: #1b212f;
   padding: 100px 0; }
-
-.happy_details {
-  color: #1b212f; }
-
-.happy_count {
-  color: #1b212f; }
 
 .home_two_testimonial_wrap {
   position: relative;
@@ -1153,6 +1151,14 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #25c8e0;
     opacity: 0.031;
     border-bottom-left-radius: 80px; }
+  .home_two_testimonial_wrap .glbal_title {
+    text-align: left;
+    color: #494d59; }
+  .home_two_testimonial_wrap .glbal_min_head {
+    text-align: left;
+    margin-left: 0;
+    color: #1b212f;
+    margin-bottom: 45px; }
 
 /*========================= Home page three ====================*/
 .testimonial_wrap {
@@ -1378,7 +1384,7 @@ h1, h2, h3, h4, h5, h6, p {
 /*========================= home-two choose us ====================*/
 .home2_chose_us {
   background-color: #ffffff;
-  padding: 60px 0; }
+  padding: 65px 0 160px; }
   .home2_chose_us .home2_choselimg {
     position: relative; }
     .home2_chose_us .home2_choselimg .home2_choselimgmain {
@@ -1474,89 +1480,80 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 1; }
 
 /*========================= countdown and  happy client home page one ====================*/
-.client_prof {
-  position: relative;
-  display: inline-block;
-  padding: 15px;
-  border-radius: 50%;
+.countdwrapper {
   margin-bottom: 30px; }
-  .client_prof a {
+  .countdwrapper .client_prof {
+    position: relative;
     display: inline-block;
-    background-color: #fddb64;
+    padding: 15px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center; }
-  .client_prof .dailly_cust {
-    background-color: #3045ff; }
-  .client_prof .dailly_down {
-    background-color: #f9265d; }
-  .client_prof .dailly_awards {
-    background-color: #00bf89; }
-  .client_prof .client_border {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #eeeef0;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    -webkit-animation: move 10s linear infinite;
-    animation: move 10s linear infinite; }
-    .client_prof .client_border::before {
+    margin-bottom: 30px; }
+    .countdwrapper .client_prof a {
+      display: inline-block;
+      background-color: #fddb64;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center; }
+    .countdwrapper .client_prof .dailly_cust {
+      background-color: #3045ff; }
+    .countdwrapper .client_prof .dailly_down {
+      background-color: #f9265d; }
+    .countdwrapper .client_prof .dailly_awards {
+      background-color: #00bf89; }
+    .countdwrapper .client_prof .client_border {
       position: absolute;
-      content: "";
-      width: 10px;
-      height: 10px;
-      background: #01aeb2;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #eeeef0;
+      top: 0;
       left: 0;
       border-radius: 50%;
-      line-height: 0px;
-      top: 35px; }
-    .client_prof .client_border::after {
-      position: absolute;
-      content: "";
-      width: 10px;
-      height: 10px;
-      background: #ff6b4f;
-      right: 0;
-      border-radius: 50%;
-      line-height: 10px;
-      bottom: 35px; }
-
-.happy_details {
-  font-family: "Spectral", serif;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #1b212f;
-  text-transform: capitalize;
-  margin-bottom: 24px; }
-
-.happy_count {
-  font-family: "Spectral", serif;
-  font-size: 48px;
-  line-height: 46px;
-  font-weight: 700;
-  color: #666666; }
-
-@-webkit-keyframes move {
-  0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
-
-@keyframes move {
-  0% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
+      -webkit-animation: move 10s linear infinite;
+      animation: move 10s linear infinite; }
+      .countdwrapper .client_prof .client_border::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #01aeb2;
+        left: 0;
+        border-radius: 50%;
+        line-height: 0px;
+        top: 35px; }
+      .countdwrapper .client_prof .client_border::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: #ff6b4f;
+        right: 0;
+        border-radius: 50%;
+        line-height: 10px;
+        bottom: 35px; }
+  .countdwrapper .happy_details {
+    font-family: "Spectral", serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #1b212f;
+    text-transform: capitalize;
+    margin-bottom: 24px; }
+  .countdwrapper .happy_count {
+    font-family: "Spectral", serif;
+    font-size: 48px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #666666; }
 
 /*========================= countdown and  happy client home two  ====================*/
-.our_customer_wrap.hometwocount .happy_details {
-  color: #ffffff; }
-
-.our_customer_wrap.hometwocount .happy_count {
-  color: #ffffff; }
+.our_customer_wrap.hometwocount {
+  padding: 100px 0 60px; }
+  .our_customer_wrap.hometwocount .happy_details {
+    color: #ffffff; }
+  .our_customer_wrap.hometwocount .happy_count {
+    color: #ffffff; }
 
 /*========================= Funnys ====================*/
 /*========================= play keyframes ====================*/
@@ -1618,6 +1615,16 @@ h1, h2, h3, h4, h5, h6, p {
   100% {
     -webkit-transform: translate(0px, 0px) rotate(0deg);
     transform: translate(0px, 0px) rotate(0deg); } }
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@keyframes move {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
 
 /*========================= newsletter ====================*/
 .newsletter_wrap {
@@ -1837,7 +1844,8 @@ h1, h2, h3, h4, h5, h6, p {
     border: none !important;
     padding: 0;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    box-shadow: none !important;
+    margin-bottom: 30px; }
     .project_gallery.home2pglly .portfolio_dts_item .portfolio_item_img {
       position: relative; }
       .project_gallery.home2pglly .portfolio_dts_item .portfolio_item_img::before {
@@ -1849,7 +1857,7 @@ h1, h2, h3, h4, h5, h6, p {
         width: 100%;
         height: 100%;
         content: "";
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
         -webkit-transition: all 0.4s;
         -o-transition: all 0.4s;
         transition: all 0.4s;
@@ -1891,9 +1899,20 @@ h1, h2, h3, h4, h5, h6, p {
           color: #ffffff;
           line-height: 1; }
     .project_gallery.home2pglly .portfolio_dts_item .prot_content {
+      margin-top: 12px;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
       transition: all 0.5s; }
+      .project_gallery.home2pglly .portfolio_dts_item .prot_content .portfolio_dts_heading {
+        font-family: "Karla", sans-serif;
+        color: #1b212f;
+        font-size: 24px;
+        font-weight: 700; }
+      .project_gallery.home2pglly .portfolio_dts_item .prot_content .portfolio_dts_pra {
+        font-family: "Karla", sans-serif;
+        color: #494d59;
+        font-size: 18px;
+        font-weight: 700; }
     .project_gallery.home2pglly .portfolio_dts_item:hover .portfolio_item_img::before {
       opacity: 1;
       visibility: visible; }
@@ -1904,14 +1923,18 @@ h1, h2, h3, h4, h5, h6, p {
       opacity: 1;
       visibility: visible; }
     .project_gallery.home2pglly .portfolio_dts_item:hover .prot_content {
-      -webkit-transform: translateY(-70px);
-      -ms-transform: translateY(-70px);
-      transform: translateY(-70px);
+      -webkit-transform: translateY(-80px);
+      -ms-transform: translateY(-80px);
+      transform: translateY(-80px);
       z-index: 5; }
       .project_gallery.home2pglly .portfolio_dts_item:hover .prot_content .portfolio_dts_heading {
         color: #ff6b4f; }
       .project_gallery.home2pglly .portfolio_dts_item:hover .prot_content .portfolio_dts_pra {
         color: #ff6b4f; }
+  .project_gallery.home2pglly .View_details .View_more.Secondary_Btn {
+    font-size: 18px;
+    font-family: "Spectral", serif;
+    font-weight: 700; }
 
 /*========================= home three project gallery ====================*/
 .project_gallery.home3projgallery {
