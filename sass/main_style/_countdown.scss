@@ -25,7 +25,7 @@
         .dailly_awards {
             background-color: #00bf89;
         }
-    
+
         .client_border {
             position: absolute;
             width: 100%;
@@ -35,7 +35,7 @@
             left: 0;
             border-radius: 50%;
             animation: move 10s linear infinite;
-    
+
             &::before {
                 position: absolute;
                 content: "";
@@ -78,20 +78,33 @@
     }
 }
 
-
-
 /*========================= countdown and  happy client home two  ====================*/
 .our_customer_wrap.hometwocount {
     padding: 100px 0 60px;
     .happy_details {
         color: $color-white;
     }
-    .happy_count{
+    .happy_count {
         color: $color-white;
     }
-
 }
+/*========================= countdown and  happy client home page three  ====================*/
 
+.our_customer_wrap.hometwocount.homethreecount {
+    padding: 120px 0 25px;
+    background-color: $color-white;
+    .client_prof {
+        .client_border{
+            border: 1px solid #ffe9e5;
+        }
+    }
+    .happy_details {
+        color: $theme-colortwo;
+    }
+    .happy_count {
+        color: $theme-color;
+    }
+}
 
 /*========================= Funnys ====================*/
 // .preloader-wrap {

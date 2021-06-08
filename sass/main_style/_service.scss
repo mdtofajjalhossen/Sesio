@@ -98,7 +98,7 @@
 
 .service_hometwo_wrap {
     background-color: $color-white;
-    padding: 110px 0 60px;
+    padding: 110px 0 30px;
     .glbal_title{
         color: $theme-color;
         text-transform: uppercase;
@@ -111,6 +111,9 @@
     @include transition(0.5s);
     border-radius: 5px;
     padding: 40px 12px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
     a {
         display: inline-block;
         width: 90px;
@@ -151,10 +154,11 @@
     }
 }
 
+
 /*========================= home three service ====================*/
 .service_homethree_wrap{
     background-color: $color-white;
-    padding: 100px 0;
+    padding: 110px 0;
     .glbal_title{
         position: relative;
         display: inline-block;
@@ -170,7 +174,6 @@
             background: $theme-bg;
             @include transition(0.5s);
             z-index: -1;
-
         }
         &:hover {
             &::before {
@@ -183,6 +186,24 @@
         background-color: $color-white;
         border: 1px solid #e8e8e8;
         padding: 30px;
+        .colorone {
+            background-color: #fef5d9;
+        } 
+        .colortwo {
+            background-color: #e0e3ff;
+        } 
+        .colorthree {
+            background-color: #fedfe7;
+        } 
+        .colorfour {
+            background-color: #d9f5ed;
+        } 
+        .colorfive {
+            background-color: #e6fbf7;
+        } 
+        .colorsix {
+            background-color: #e2ddf0;
+        } 
         .service_item_title{
             margin-bottom: 15px;
         }

@@ -12,6 +12,16 @@
         width: 100%;
         height: 100%;
     }
+    .glbal_title {
+        text-align: left;
+        margin-bottom: 14px;
+    }
+    .glbal_min_head {
+        text-align: left;
+        max-width: 390px;
+        width: 100%;
+        margin: 0 0 54px 0;
+    }
 }
 
 /*========================= Testimonials header style ====================*/
@@ -145,12 +155,10 @@
 //     color: $theme-colortwo;
 // }
 
-
-
 .home_two_testimonial_wrap {
     position: relative;
     overflow-x: hidden;
-    padding: 110px 0 100px;
+    padding: 110px 0 70px;
     &::before {
         position: absolute;
         left: 60px;
@@ -168,7 +176,7 @@
         text-align: left;
         color: $theme-color;
     }
-    .glbal_min_head{
+    .glbal_min_head {
         text-align: left;
         margin-left: 0;
         color: $theme-colortwo;
@@ -178,8 +186,8 @@
 
 /*========================= Home page three ====================*/
 .testimonial_wrap {
-    padding: 60px 0 120px;
-    background-color: #2222;
+    padding: 50px 0 115px;
+    background-color: $color-white;
     // .glbal_title {
 
     // }
@@ -196,6 +204,7 @@
             }
             .test_single_pra {
                 font-size: 24px;
+                font-family: $fontspectral;
                 line-height: 34px;
                 font-weight: $f-weight-medium;
                 color: $theme-color;
@@ -318,19 +327,3 @@
         }
     }
 }
-
-
-
-
-// .Rectangle_14 {
-//     border-radius: 10px;
-//     background-color: rgb(255, 255, 255);
-//     box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.08);
-//     position: absolute;
-//     left: 375px;
-//     top: 5972px;
-//     width: 370px;
-//     height: 400px;
-//     z-index: 253;
-//   }
-  

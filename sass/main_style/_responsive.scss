@@ -1,3 +1,80 @@
+@media (max-width:1366px) {
+    .banner_header {
+        .left_hero_wrap {
+            .hero_lftsld_cont {
+                margin-bottom: 60px;
+                .hero_heading {
+                    font-size: 48px;
+                    line-height: 60px;
+                    max-width: 550px;
+                }
+                .hero_pra {
+                    margin-bottom: 40px;
+                }
+                a.primary_Btn {
+                    padding: 10px 32px;
+                }
+            }
+            .hero_socical_media {
+                ul {
+                    li {
+                        display: inline-block;
+                        list-style: none;
+                        margin-right: 35px;
+                        a {
+                            display: inline-block;
+                            font-size: 18px;
+                            color: $theme-color;
+                            text-decoration: none;
+                            @include transition(0.5s);
+                            &:hover {
+                                color: $theme-bg;
+                            }
+                        }
+    
+                        &:first-child {
+                            margin-right: 40px;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .img_right_slide {
+            position: relative;
+            z-index: 4;
+            &::before {
+                background-color: #01aeb2;
+                opacity: 0.2;
+                position: absolute;
+                left: auto;
+                top: -45px;
+                width: 461px;
+                height: 679px;
+                z-index: -1;
+                content: "";
+                right: -45px;
+                transform: skew(0deg, -5deg);
+            }
+        }
+    }
+/*=========================home page about ====================*/
+
+    .about_wrap {
+        .chose_noise_one {
+            display: none;
+        }
+        .chose_noise_two{
+            display: none;
+        }
+    }
+}
+
+
+
+
 @media (min-width:992px) {
 .sesio_header {
     .header_nav {
@@ -8,7 +85,7 @@
                     margin-bottom: -40px;
                     .dropdown-menu {
                         display: block;
-                        margin: 65px 0 0;
+                        margin: 64px 0 0;
                         left: 0;
                         top: 0;
                         min-width: max-content;

@@ -174,7 +174,6 @@
  onclickimg();
 
 
-
   // $('#ctn-preloader').fadeOut(); // will first fade out the loading animation
   // $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
   // $('body').delay(350).css({'overflow':'visible'});
@@ -263,10 +262,15 @@ function counting_data(){
   if( counter.length){
       counter.counterUp({
           delay:1,
-          time:2000
+          time:500
       });
   }
 } 
 counting_data();
+
+function wowjsanimate() {
+  new WOW().init();
+}
+wowjsanimate();
 
 })(jQuery);     

@@ -1,6 +1,6 @@
 /*========================= chooseus ====================*/
-.why_choseus_wrap{
-    background-color:$theme-colortwo ;
+.why_choseus_wrap {
+    background-color: $theme-colortwo;
     padding: 100px 0 150px;
     overflow: hidden;
     position: relative;
@@ -9,22 +9,22 @@
         top: 165px;
         left: 215px;
     }
-    .chose_noise_two{
+    .chose_noise_two {
         position: absolute;
         left: 115px;
         bottom: 208px;
     }
-    .chose_noise_three{
+    .chose_noise_three {
         position: absolute;
         right: 340px;
         top: 105px;
     }
-    .chose_noise_four{
+    .chose_noise_four {
         position: absolute;
         right: 168px;
         top: 290px;
     }
-    .chose_noise_five{
+    .chose_noise_five {
         position: absolute;
         left: 655px;
         top: 35px;
@@ -32,57 +32,57 @@
     .chose_noise_eight {
         position: absolute;
         right: 168px;
-        bottom:200px; 
+        bottom: 200px;
     }
-        .choseus_left{
-            // position: relative;
-            padding-top: 70px;
-            .glbal_title {
-                text-align: left;
-                margin-bottom: 13px;
-                font-family: $fontspectral;
-            }
-            .glbal_min_head{
-                text-align: left;
-                margin: 0 auto 10px 0;
-                max-width: 465px;
-                font-family: $fontspectral;
-                color: $color-white;
-            }
-            p {
-                max-width: 500px;
-                width: 100%;
-                margin-bottom: 15px;
-                font-family: $fontkarla;
-                color: $color-white;
-            }
-            .choseus_left_check {
-                ul {
-                    li{
-                        margin-bottom: 9px;
-                        display: inline-block;
-                        &:last-child {
-                            margin-bottom: 27px;
-                        }
-                        a {
-                            font-size: $f-size;
-                            line-height: $f-hight;
-                            text-decoration: none;
-                            font-family: $fontkarla;
-                            color: $color-white;
-                            i {
-                                margin-right: 8px;
-                            }
+    .choseus_left {
+        // position: relative;
+        padding-top: 70px;
+        .glbal_title {
+            text-align: left;
+            margin-bottom: 13px;
+            font-family: $fontspectral;
+        }
+        .glbal_min_head {
+            text-align: left;
+            margin: 0 auto 10px 0;
+            max-width: 465px;
+            font-family: $fontspectral;
+            color: $color-white;
+        }
+        p {
+            max-width: 500px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-family: $fontkarla;
+            color: $color-white;
+        }
+        .choseus_left_check {
+            ul {
+                li {
+                    margin-bottom: 9px;
+                    display: inline-block;
+                    &:last-child {
+                        margin-bottom: 27px;
+                    }
+                    a {
+                        font-size: $f-size;
+                        line-height: $f-hight;
+                        text-decoration: none;
+                        font-family: $fontkarla;
+                        color: $color-white;
+                        i {
+                            margin-right: 8px;
                         }
                     }
                 }
             }
-            .chose_noise_six {
-                position: absolute;
-                bottom: 85px;
-                left:390px;
-            }
         }
+        .chose_noise_six {
+            position: absolute;
+            bottom: 85px;
+            left: 390px;
+        }
+    }
     .about_left_img {
         position: relative;
         img {
@@ -106,7 +106,7 @@
             z-index: 1;
         }
         .video_pattern {
-            img{
+            img {
                 position: absolute;
                 right: -56px;
                 top: 80px;
@@ -118,23 +118,22 @@
             bottom: -85px;
             right: 200px;
         }
-
     }
 }
 
 /*========================= home-two choose us ====================*/
 .home2_chose_us {
-    background-color: $color-white ;
+    background-color: $color-white;
     padding: 65px 0 160px;
-    .home2_choselimg{
+    .home2_choselimg {
         position: relative;
-        .home2_choselimgmain{
+        .home2_choselimgmain {
             position: relative;
             z-index: 3;
             width: 600px;
             left: -50px;
         }
-        .home2_choselimg_shape{
+        .home2_choselimg_shape {
             position: absolute;
             z-index: 1;
             top: 60px;
@@ -143,19 +142,18 @@
                 max-width: 100%;
                 width: 100%;
             }
-
         }
     }
     .about_right_slide {
         margin-left: 45px;
-        .about_right_min_head{
+        .about_right_min_head {
             color: $theme-color;
             font-style: normal;
         }
-        .about_right_head{
+        .about_right_head {
             margin-bottom: 10px;
         }
-        .choseus_check{
+        .choseus_check {
             ul {
                 li {
                     a {
@@ -184,7 +182,7 @@
                             border-radius: 50px;
                         }
                     }
-                    
+
                     &:last-child {
                         margin-bottom: 45px;
                     }
@@ -196,15 +194,15 @@
             padding: 11px 25px;
         }
     }
-
 }
 
 /*========================= home three choose us ====================*/
-.home2_chose_us.home3_choss_us{
+.home2_chose_us.home3_choss_us {
     padding: 120px 0;
     background-color: $color-white;
-    .about_right_slide{
-        .about_right_min_head{
+    .about_right_slide {
+        margin-top: 80px;
+        .about_right_min_head {
             position: relative;
             display: inline-block;
             color: $theme-bg;
@@ -217,8 +215,7 @@
                 height: 1px;
                 background: $theme-bg;
                 content: "";
-                @include transition (0.5s);
-                
+                @include transition(0.5s);
             }
             &:hover {
                 &::before {
@@ -227,26 +224,26 @@
             }
         }
     }
-    .home2_choselimg{
-        .home2_choselimgmain{
+    .home2_choselimg {
+        .home2_choselimgmain {
             position: relative;
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             z-index: 3;
-            left: 0;
+            left: 40px;
             border-bottom-right-radius: 110px;
+            width: auto;
         }
-        .home3_choselimg_shaone{
+        .home3_choselimg_shaone {
             position: absolute;
-            left: -60px;
+            left: -15px;
             top: -60px;
             z-index: 1;
-
         }
-        .home3_choselimg_shtwo{
+        .home3_choselimg_shtwo {
             position: absolute;
-            right: -60px;
+            right: -30px;
             bottom: -60px;
             z-index: 1;
         }

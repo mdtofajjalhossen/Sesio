@@ -1,10 +1,11 @@
-/*========================= footer ====================*/
+/*========================= footer home page one====================*/
 .footer_wrap{
     padding: 120px 0 75px;
     background-color: #f2f8ff;
     .rombspace{
-        margin-bottom: 74px;
+        margin-bottom: 55px;
         .footer_widget{
+            margin-bottom: 30px;
             a{
                 display: inline-block;
                 img {
@@ -117,4 +118,15 @@
             }
         }
     }
+}
+
+/*========================= footer home page two====================*/
+.footer_wrap.home_two {
+background-color: $color-white;
+}
+
+/*========================= footer home page three====================*/
+.footer_wrap.homethree {
+    background-color: $color-white;
+    padding: 60px 0 75px;
 }

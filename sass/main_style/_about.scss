@@ -2,40 +2,45 @@
 .about_wrap {
     padding: 120px 0 100px;
     position: relative;
-    .chose_noise_one{
+    .chose_noise_one {
         position: absolute;
         top: 200px;
         left: 215px;
     }
-    .chose_noise_two{
+    .chose_noise_two {
         position: absolute;
         top: 56%;
         left: 15%;
         animation: pulse 1s infinite alternate;
     }
 
-    .chose_noise_three{
+    .chose_noise_three {
         position: absolute;
         left: 115px;
         bottom: 140px;
-        
+        @media (max-width: 1366px) {
+            bottom: 0;
+        }
     }
-    .chose_noise_four{
+    .chose_noise_four {
         position: absolute;
         left: 40%;
         top: 70px;
     }
-    .chose_noise_six{
+    .chose_noise_six {
         position: absolute;
         right: 17%;
         top: 140px;
     }
-    .chose_noise_seven{
+    .chose_noise_seven {
         position: absolute;
         right: 9%;
         bottom: 45%;
+        @media (max-width: 1366px) {
+            right: 2%;
+        }
     }
-    .chose_noise_eight{
+    .chose_noise_eight {
         position: absolute;
         right: 26%;
         bottom: 18%;
@@ -61,6 +66,7 @@
             justify-content: center;
             vertical-align: middle;
             @include transition(0.5s);
+            color: $color-white;
             &::after {
                 position: absolute;
                 left: 50%;
@@ -74,7 +80,9 @@
                 z-index: -1;
                 animation: videoplay 2s linear infinite;
             }
-            
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
     &::before {
@@ -92,6 +100,7 @@
 
 .about_right_slide {
     margin-left: 72px;
+    margin-top: 90px;
     .about_right_min_head {
         font-family: $fontspectral;
         font-size: 24px;
@@ -114,7 +123,8 @@
             color: $theme-bg;
         }
     }
-    .about_right_pra, .about_right_pratwo {
+    .about_right_pra,
+    .about_right_pratwo {
         font-size: $f-size;
         line-height: $f-hight;
         font-weight: $f-weight-r;
@@ -128,60 +138,61 @@
         margin-bottom: 55px;
     }
 }
+
 /*========================= home page two about ====================*/
 .about_hometwo_wrap {
     position: relative;
-    padding: 60px 0;
+    padding: 60px 0 120px;
     background-color: #faf6f6;
-    .htwo_wp_spone{
+    .htwo_wp_spone {
         position: absolute;
         top: 140px;
         left: 215px;
         display: inline-block;
     }
-    .htwo_wp_sptwo{
+    .htwo_wp_sptwo {
         position: absolute;
         top: 375px;
         left: 300px;
         display: inline-block;
     }
-    .htwo_wp_spthree{
+    .htwo_wp_spthree {
         position: absolute;
         bottom: 300px;
         left: 115px;
         display: inline-block;
     }
-    .htwo_wp_spfour{
+    .htwo_wp_spfour {
         position: absolute;
         top: 75px;
         left: 495px;
         display: inline-block;
     }
-    .htwo_wp_spfive{
+    .htwo_wp_spfive {
         position: absolute;
         top: 100px;
         left: 55%;
         display: inline-block;
     }
-    .htwo_wp_spsix{
+    .htwo_wp_spsix {
         position: absolute;
         top: 80px;
         right: 343px;
         display: inline-block;
     }
-    .htwo_wp_spseven{
+    .htwo_wp_spseven {
         position: absolute;
         top: 265px;
         right: 168px;
         display: inline-block;
     }
-    .htwo_wp_speight{
+    .htwo_wp_speight {
         position: absolute;
         right: 168px;
         bottom: 232px;
         display: inline-block;
     }
-    .about_two_left_img{
+    .about_two_left_img {
         position: relative;
         padding: 50px;
         .about_two_mainimg {
@@ -191,14 +202,14 @@
             position: relative;
             z-index: 5;
         }
-        .noise_about{
-            .noise_about_one{
+        .noise_about {
+            .noise_about_one {
                 position: absolute;
                 left: 0;
                 bottom: 0;
                 z-index: 1;
             }
-            .noise_about_two{
+            .noise_about_two {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -211,8 +222,8 @@
         .about_right_pra {
             margin-bottom: 15px;
         }
-        .line_br{
-            border-bottom: 1px  solid #e8e8ea;
+        .line_br {
+            border-bottom: 1px solid #e8e8ea;
             max-width: 338px;
             width: 100%;
             display: inline-block;
@@ -227,7 +238,7 @@
             font-style: italic;
             margin-bottom: 15px;
         }
-        .singe_about{
+        .singe_about {
             .abt_sing {
                 display: inline-block;
                 color: $theme-colortwo;
@@ -248,38 +259,38 @@
             padding: 11px 25px;
         }
     }
-
 }
 // box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 
 /*========================= home page three about ====================*/
-.about_homethre_wrap{
+.about_homethre_wrap {
     position: relative;
     background-color: $color-white;
-    padding: 60px 0;
-    .htwo_wp_spone{
+    padding: 65px 0 110px;
+    .htwo_wp_spone {
         position: absolute;
         top: 240px;
         left: 39%;
     }
-    .about_two_left_img{
+    .about_two_left_img {
         .Abt_three_bg {
             margin-left: 75px;
             border-bottom-right-radius: 120px;
         }
-        .noise_about{
+        .noise_about {
             display: inline-block;
             position: absolute;
             left: 0px;
             top: -60px;
-            .noise_about_one{
+            .noise_about_one {
                 max-width: 100%;
                 height: auto;
             }
         }
     }
-    .about_right_slide{
+    .about_right_slide {
         margin-left: 90px;
+        margin-top: 80px;
         .about_right_min_head {
             position: relative;
             display: inline-block;
@@ -292,15 +303,13 @@
                 height: 1px;
                 background: $theme-bg;
                 content: "";
-                @include transition (0.5s);
-                
+                @include transition(0.5s);
             }
             &:hover {
                 &::before {
                     height: 5px;
                 }
             }
-
         }
         a.Secondary_Btn {
             border-color: #f0c8c8;

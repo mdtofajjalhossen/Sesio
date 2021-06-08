@@ -122,22 +122,21 @@
                             padding: 20px 30px;
                             border-radius: 5px;
                             @include transition(0.5s);
-                            // background-color: $color-white;
-                            background-color: #222;
+                            background-color: $color-white;
                             border: none;
                             li {
                                 display: block;
                                 a {
-                                    color: $theme-bg;
+                                    color: $theme-color;
                                     font-size: 16px;
-                                    line-height: $f-hight;
+                                    line-height: 32px;
                                     font-weight: $f-weight-bold;
                                     font-family: $fontkarla;
                                     text-transform: $text-cap;
                                     background: transparent;
                                     @include transition(0.5s);
                                     &:hover {
-                                        color: $theme-color;
+                                        color: $theme-bg;
                                         text-decoration: none;
                                         background: transparent;
                                     }
