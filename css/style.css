@@ -724,6 +724,44 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 27px; }
   .about_right_slide .about_right_pratwo {
     margin-bottom: 55px; }
+  .about_right_slide a.primary_Btn {
+    position: relative;
+    background: transparent;
+    color: #ff6b4f;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 12px 30px; }
+    .about_right_slide a.primary_Btn i {
+      margin-left: 5px; }
+    .about_right_slide a.primary_Btn::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      content: "";
+      z-index: -1;
+      background: #ff6b4f;
+      -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+      transform-origin: 50%;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+      transform: scaleY(0);
+      border-radius: 50px; }
+    .about_right_slide a.primary_Btn:hover {
+      color: #ffffff; }
+      .about_right_slide a.primary_Btn:hover::before {
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1); }
 
 /*========================= home page two about ====================*/
 .about_hometwo_wrap {
@@ -1396,6 +1434,36 @@ h1, h2, h3, h4, h5, h6, p {
       position: absolute;
       bottom: 85px;
       left: 390px; }
+    .why_choseus_wrap .choseus_left .View_more.Secondary_Btn {
+      position: relative;
+      z-index: 10; }
+      .why_choseus_wrap .choseus_left .View_more.Secondary_Btn::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        height: 100%;
+        -webkit-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        background: #ff6b4f;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 50px;
+        z-index: -1; }
+      .why_choseus_wrap .choseus_left .View_more.Secondary_Btn:hover {
+        color: #ffffff;
+        background: transparent;
+        -webkit-box-shadow: transparent;
+        box-shadow: transparent; }
+        .why_choseus_wrap .choseus_left .View_more.Secondary_Btn:hover::before {
+          width: 100%;
+          opacity: 1;
+          visibility: visible;
+          left: 0;
+          right: auto; }
   .why_choseus_wrap .about_left_img {
     position: relative; }
     .why_choseus_wrap .about_left_img img {
@@ -1901,6 +1969,31 @@ h1, h2, h3, h4, h5, h6, p {
       opacity: 1;
       visibility: visible;
       z-index: 2; }
+  .project_gallery .View_details .View_more.Secondary_Btn {
+    position: relative; }
+    .project_gallery .View_details .View_more.Secondary_Btn::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      z-index: -1;
+      -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+      transform-origin: 50%;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      border-radius: 50px;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      background-color: #ff6b4f; }
+    .project_gallery .View_details .View_more.Secondary_Btn:hover::before {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
 
 /*========================= home three project gallery ====================*/
 .project_gallery.home2pglly {
@@ -2372,6 +2465,8 @@ h1, h2, h3, h4, h5, h6, p {
   .about_wrap .chose_noise_one {
     display: none; }
   .about_wrap .chose_noise_two {
+    display: none; }
+  .about_wrap .chose_noise_three {
     display: none; } }
 
 @media (min-width: 992px) {

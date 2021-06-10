@@ -137,6 +137,37 @@
     .about_right_pratwo {
         margin-bottom: 55px;
     }
+    a.primary_Btn {
+        position: relative;
+        background: transparent;
+        color: $theme-bg;
+        align-items: center;
+        display: inline-flex;
+        padding: 12px 30px;
+        i {
+            margin-left: 5px;
+        }
+        &::before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            content: "";
+            z-index: -1;
+            background: $theme-bg;
+            transform-origin: 50%;
+            transition-duration: 0.3s;
+            transform: scaleY(0);
+            border-radius: 50px;
+        }
+        &:hover {
+            color: $color-white;
+            &::before {
+                transform: scaleY(1);
+            }
+        }
+    }
 }
 
 /*========================= home page two about ====================*/

@@ -82,6 +82,39 @@
             bottom: 85px;
             left: 390px;
         }
+        .View_more.Secondary_Btn {
+            position: relative;
+            z-index: 10;
+            // box-shadow: none;
+            &::before {
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 0;
+                height: 100%;
+                transition-duration: 0.5s;
+                background: $theme-bg;
+                opacity: 0;
+                visibility: hidden;
+                border-radius: 50px;
+                z-index: -1;
+
+            }
+            &:hover {
+                color: $color-white;
+                background: transparent;
+                box-shadow: transparent;
+                &::before {
+                    width: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
     }
     .about_left_img {
         position: relative;
