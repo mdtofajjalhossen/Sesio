@@ -1,4 +1,4 @@
-@media (max-width:1366px) {
+@media (max-width: 1366px) {
     .banner_header {
         .left_hero_wrap {
             .hero_lftsld_cont {
@@ -31,7 +31,7 @@
                                 color: $theme-bg;
                             }
                         }
-    
+
                         &:first-child {
                             margin-right: 40px;
                         }
@@ -60,53 +60,108 @@
             }
         }
     }
-/*=========================home page about ====================*/
+    /*=========================home page about ====================*/
     .about_wrap {
         .chose_noise_one {
             display: none;
         }
-        .chose_noise_two{
+        .chose_noise_two {
             display: none;
         }
-        .chose_noise_three{
+        .chose_noise_three {
             display: none;
         }
     }
+    /*=========================home page why_choseus_wrap ====================*/
+    .why_choseus_wrap {
+        .chose_noise_one {
+            top: 100px;
+            left: 215px;
+        }
+        .chose_noise_two {
+            display: none;
+        }
+        .chose_noise_three {
+            display: none;
+        }
+        .chose_noise_four {
+            display: none;
+        }
+        .chose_noise_eight {
+            display: none;
+        }
+    }
+    /*=========================home page why_choseus_wrap ====================*/
+    .happy_client_wrap.home_One {
+        padding: 100px 0 80px;
+        .mb30 {
+            margin-bottom: 0;
+        }
+    }
+    /*=========================home page footer_wrap ====================*/
+    .footer_wrap {
+        padding: 100px 0 75px;
+    }
+    /*=========================home  ====================*/
+}
+@media(max-width: 1024px) {
+    .banner_header {
+        padding-top: 230px;
+        padding-bottom: 130px;
+    }
+    .banner_header .left_hero_wrap .hero_lftsld_cont .hero_heading {
+        font-size: 40px;
+        line-height: 55px;
+        max-width: 480px;
+    }
+    .banner_header .left_hero_wrap .hero_lftsld_cont {
+        margin-bottom: 35px;
+    }
+    .banner_header .img_right_slide::before {
+        top: -30px;
+        width: 444px;
+        height: 560px;
+    }
+    /*=========================home page about ====================*/
+    .about_wrap {
+        padding: 80px 0 60px;
+    }
+    .about_right_slide .about_right_head {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
 }
 
-
-
-
-@media (min-width:992px) {
-.sesio_header {
-    .header_nav {
-        .Sesio_header_menu {
-            ul {
-                li.nav-item {
-                    padding-bottom: 40px;
-                    margin-bottom: -40px;
-                    .dropdown-menu {
-                        display: block;
-                        margin: 64px 0 0;
-                        left: 0;
-                        top: 0;
-                        min-width: max-content;
-                        transform: translate(-30px, 10px);
-                        box-shadow: $btn-shadow;
-                        opacity: 0;
-                        visibility: hidden;
-                    }
-                    &:hover {
+@media (min-width: 992px) {
+    .sesio_header {
+        .header_nav {
+            .Sesio_header_menu {
+                ul {
+                    li.nav-item {
+                        padding-bottom: 40px;
+                        margin-bottom: -40px;
                         .dropdown-menu {
-                            opacity: 1;
-                            visibility: visible;
-                            transform: translate(-30px, 0);
+                            display: block;
+                            margin: 64px 0 0;
+                            left: 0;
+                            top: 0;
+                            min-width: max-content;
+                            transform: translate(-30px, 10px);
+                            box-shadow: $btn-shadow;
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                        &:hover {
+                            .dropdown-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translate(-30px, 0);
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
-
 }
