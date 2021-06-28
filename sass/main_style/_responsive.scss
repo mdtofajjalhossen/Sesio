@@ -104,7 +104,7 @@
     }
     /*=========================home  ====================*/
 }
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
     .banner_header {
         padding-top: 230px;
         padding-bottom: 130px;
@@ -130,7 +130,6 @@
         font-size: 30px;
         line-height: 40px;
     }
-    
 }
 
 @media (min-width: 992px) {
@@ -165,3 +164,63 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .sesio_header {
+        .container {
+            .Sesio_header_menu {
+                background-color: $color-white;
+                padding: 0 30px;
+                .Custom_ul {
+                    display: block;
+                    padding: 20px 0 15px;
+                    li {
+                        margin-left: 0 !important;
+                        margin-bottom: 8px;
+                        display: block;
+                        a {
+                            &::before {
+                                width: 0% !important;
+                            }
+                            &::after {
+                                right: 0;
+                            }
+                        }
+                        .dropdown-menu {
+                            padding: 18px 40px 20px 0 !important;
+                            margin: 0 0 22px;
+                            border-bottom: 1px solid #e1e5ec !important;
+                            border-radius: 0 !important;
+                            transition: unset !important;
+                            width: 100% !important;
+                            li {
+                                display: block;
+                            }
+                            a {
+                                padding-left: 40px;
+                            }
+                        }
+                    }
+                }
+                .get_register {
+                    margin-left: 0;
+                    a {
+                        position: static;
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        &.fixedMenu {
+            .header_nav {
+                .get_register {
+                    a {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

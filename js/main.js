@@ -24,16 +24,16 @@
   /*-------------------------------------------------------------------------------
       Dropdown Menu
   -------------------------------------------------------------------------------*/
-  // function active_dropdown() {
-  //     if ($(window).width() < 992) {
-  //         $('.Appily_header_menu ul li.nav-item > a.dropdown-toggle').on('click', function (event) {
-  //             event.preventDefault();
-  //             $(this).parent().find('.dropdown-menu').first().toggle(500);
-  //             $(this).parent().siblings().find('.dropdown-menu').hide(500);
-  //         });
-  //     }
-  // }
-  // active_dropdown();
+  function active_dropdown() {
+      if ($(window).width() < 992) {
+          $('.Sesio_header_menu ul li.nav-item > a.dropdown-toggle').on('click', function (event) {
+              event.preventDefault();
+              $(this).parent().find('.dropdown-menu').first().toggle(500);
+              $(this).parent().siblings().find('.dropdown-menu').hide(500);
+          });
+      }
+  }
+  active_dropdown();
 
   /*-------------------------------------------------------------------------------
      appscreenshot slider
