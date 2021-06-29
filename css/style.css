@@ -2572,6 +2572,123 @@ h1, h2, h3, h4, h5, h6, p {
         width: 100%;
         margin-bottom: 15px; }
   .sesio_header.fixedMenu .header_nav .get_register a {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .banner_header {
+    padding-top: 130px;
+    padding-bottom: 70px; }
+    .banner_header .left_hero_wrap .hero_lftsld_cont .hero_heading {
+      font-size: 34px;
+      line-height: 45px; }
+    .banner_header .img_right_slide::before {
+      display: none; }
+  .about_wrap {
+    padding: 80px 0 40px; }
+  .about_right_slide .about_right_head {
+    margin-bottom: 20px; }
+  .about_right_slide .about_right_pra {
+    margin-bottom: 15px; }
+  .about_right_slide .about_right_pra, .about_right_slide .about_right_pratwo {
+    font-size: 16px; }
+  .about_right_slide a.primary_Btn {
+    font-size: 16px;
+    padding: 10px 20px; }
+  .about_left_img::before {
+    width: 360px;
+    height: 320px;
+    bottom: -30px;
+    right: -30px; }
+  .about_right_slide {
+    margin-left: 50px;
+    margin-top: 0; }
+  .about_right_slide .about_right_pratwo {
+    margin-bottom: 35px; }
+  .project_gallery {
+    padding: 40px 0 80px; }
+  .project_gallery .portfolio_menu button {
+    margin-right: 8px; }
+  .project_gallery .portfolio_details .portfolio_content {
+    left: 50%;
+    top: 18%;
+    -webkit-transform: translate(-50%) translate3d(0, 50px, 0);
+    transform: translate(-18%) translate3d(0, 50px, 0);
+    padding: 0 10px; }
+  .project_gallery .portfolio_details .portfolio_content .portfolio_heading {
+    font-size: 20px; }
+  .project_gallery .portfolio_details .portfolio_content .portfolio_pra {
+    font-size: 16px; }
+  .project_gallery .portfolio_viemore {
+    padding-bottom: 20px; }
+  .Our_services .single_service .service_content .servicehead {
+    font-size: 22px; }
+  .Our_services .single_service .service_img {
+    width: 75px;
+    height: 75px;
+    line-height: 75px; }
+  .why_choseus_wrap .about_left_img {
+    margin-top: 100px; }
+  .View_details.mt30 {
+    margin-top: 0; }
+  .why_choseus_wrap {
+    padding: 80px 0; }
+    .why_choseus_wrap .choseus_left {
+      padding-top: 0; }
+    .why_choseus_wrap .about_left_img::before {
+      display: none; }
+    .why_choseus_wrap .about_left_img .video_pattern img {
+      display: none; }
+  .why_choseus_wrap .choseus_left .choseus_left_check ul li a {
+    font-size: 16px; }
+  .View_more.Secondary_Btn {
+    font-size: 16px;
+    padding: 12px 30px; }
+  .glbal_min_head {
+    font-size: 30px;
+    line-height: 40px; }
+  p {
+    font-size: 16px; }
+  .happy_client_wrap.home_One {
+    padding: 80px 0 50px; }
+  .countdwrapper .happy_count {
+    font-size: 36px;
+    line-height: 38px; }
+  .happy_client_wrap .glbal_min_head {
+    margin: 0 0 40px 0; }
+  .testimonial_slider .testimonial_item .test_itwrap .testimonial_profile .testimonial_details h4 {
+    font-size: 20px;
+    line-height: 30px; }
+  .testimonial_slider .testimonial_item .test_itwrap .testimonial_pra {
+    font-size: 16px; }
+  .testimonial_slider .testimonial_item .test_itwrap .testimonial_pra {
+    margin-bottom: 20px; }
+  .newsletter_wrap {
+    padding: 80px 0;
+    margin-left: 0; }
+  .newsletter_heading .newsletter_title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 12px; }
+  .newsletter_heading p {
+    font-size: 16px;
+    margin-bottom: 30px; }
+  .footer_wrap {
+    padding: 80px 0 75px; }
+  .footer_wrap .rombspace .footer_widget a img {
+    margin-bottom: 30px; }
+  .footer_wrap .rombspace .footer_widget p {
+    font-size: 16px; }
+  .footer_wrap .rombspace .footer_widget .footer_menu li {
+    margin-bottom: 10px; }
+  .footer_wrap .rombspace .footer_widget .footer_menu li a {
+    font-size: 16px; }
+  .footer_wrap .rombspace {
+    margin-bottom: 15px; } }
+
+@media (max-width: 768px) {
+  .banner_header .left_hero_wrap .hero_lftsld_cont .hero_pra {
+    margin-bottom: 30px; }
+  .banner_header .left_hero_wrap .hero_lftsld_cont a.primary_Btn {
+    padding: 10px 30px;
+    min-width: auto;
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
